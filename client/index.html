@@ -1,0 +1,51 @@
+<html>
+  <head>
+  	<style>
+  	  body {
+  	  	position: relative;
+  	  }
+  	  img {
+		height: 100px;
+		width: 100px;
+  	  }
+  	  #home {
+	    height: 100%;
+	    width: 100%;
+	    border: 1px solid #000;
+  	  }
+  	  #drawer {
+  	  	border: 1px dashed #F00;
+	    height: 100%;
+	    width: 45%;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    z-index: -1;
+  	  }
+  	  #logo {
+  	  	width: 100px;
+	    position: absolute;
+	    right: 25%;
+	    top: 25%;
+  	  }
+  	  #polaroid {
+  	  	width: 100px;
+  	  	position: absolute;
+  	  	left: 25%;
+  	  	top: 25%;
+  	  }
+  	</style>
+  </head>
+  <body>
+  	<div id="home">
+  		<div id="polaroid">
+		    <img src="http://assets.nydailynews.com/polopoly_fs/1.1245686!/img/httpImage/image.jpg_gen/derivatives/article_970/afp-cute-puppy.jpg" />
+  		</div>
+  		<div id="logo">
+  			<img src="http://media.mydogspace.com.s3.amazonaws.com/wp-content/uploads/2013/08/puppy-500x350.jpg" />
+  		</div>
+  	</div>
+  	<div id="drawer"></div>
+  	<script src="public/js/app.js" type="text/javascript"></script>
+  </body>
+</html>

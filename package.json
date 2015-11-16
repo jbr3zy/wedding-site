@@ -1,0 +1,25 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backbone.marionette": "^2.4.3",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-css": "^0.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "jquery": "^2.1.4",
+    "run-sequence": "^1.1.4",
+    "velocity-animate": "^1.2.3",
+    "velocity-commonjs": "^1.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
