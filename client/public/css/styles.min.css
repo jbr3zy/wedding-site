@@ -1,0 +1,1 @@
+#logo,#polaroid{width:100px;position:absolute;top:25%}body{position:relative}img{height:100px;width:100px}#home{height:100%;width:100%}#drawer{border:1px dashed red;height:100%;width:45%;position:absolute;right:0;top:0;z-index:-1}#logo{right:25%}#polaroid{left:25%}

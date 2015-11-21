@@ -3,6 +3,7 @@ var LogoView = require('./logo');
 var PolaroidView = require('./polaroid');
 var animate = require('velocity-commonjs');
 var Radio = require('backbone.radio');
+var $ = require('jquery');
 
 
 var HomeView = Marionette.LayoutView.extend({
@@ -33,6 +34,8 @@ var HomeView = Marionette.LayoutView.extend({
 		var view = new LogoView({el: this.ui.logo});
 		view.render();
 		new PolaroidView({el: this.ui.polaroid}).render();
+
+		this.$el.fadeIn();
 
 		return this;
 	},
