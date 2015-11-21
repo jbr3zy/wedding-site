@@ -1,6 +1,9 @@
 var Marionette = require('backbone.marionette');
+var Radio = require('backbone.radio');
 
 var LogoView = Marionette.ItemView.extend({
+	dataChannel: Radio.channel('data'),
+
 	ui: {
 		puppy: 'img',
 	},
@@ -14,12 +17,8 @@ var LogoView = Marionette.ItemView.extend({
     	"click @ui.puppy": "bark"
   	},
 
-  	triggers: {
-    	"click @ui.puppy": "expand"
-  	},
-
   	bark: function() {
-
+  		this.dataChannel.trigger('expand');
   	}
 });
 

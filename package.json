@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "backbone.marionette": "^2.4.3",
+    "backbone.radio": "^1.0.2",
     "browserify": "^12.0.1",
     "gulp": "^3.9.0",
     "gulp-css": "^0.1.0",
