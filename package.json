@@ -9,6 +9,7 @@
   "author": "jbr3zy",
   "license": "ISC",
   "devDependencies": {
+    "backbone": "^1.2.3",
     "backbone.marionette": "^2.4.3",
     "backbone.radio": "^1.0.2",
     "browserify": "^12.0.1",
