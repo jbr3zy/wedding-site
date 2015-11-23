@@ -6,6 +6,7 @@ var minifyCSS = require('gulp-minify-css');
 var runSequence = require('run-sequence');
 var rename = require('gulp-rename');
 var prefix = require('gulp-autoprefixer');
+var uglify = require('gulp-uglify');
 
 gulp.task('default', ['build', 'minify']);
 
