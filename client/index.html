@@ -34,6 +34,16 @@
     </style>
   </head>
   <body>
+    <!-- SVG Sprite -->
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+        <symbol id="ripple-next" viewBox="0 0 100 100">
+          <circle id="ripple-shape" cx="1" cy="1" r="1" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- /end sprite -->
+
     <div id="background-image"></div>
     <div id="background-cover"></div>
   	<div id="home">
@@ -41,6 +51,12 @@
         <img class="photo-stack photo3" />
         <img class="photo-stack photo2" />
         <img class="photo-stack photo1" />
+        <div id="next-button">
+          <svg class="ripple-obj" id="js-ripple">
+            <use height="100" width="100" xlink:href="#ripple-next" class="js-ripple"></use>
+          </svg>
+          <i class="material-icons">&#xE409;</i>
+        </div>
       </div>
   		<div id="logo">
   			<img src="http://media.mydogspace.com.s3.amazonaws.com/wp-content/uploads/2013/08/puppy-500x350.jpg" />

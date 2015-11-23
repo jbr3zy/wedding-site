@@ -15,4 +15,5 @@ setTimeout(function() {
 	onloadCSS(styles, function() {
 		myapp.start();
 	});
-}, 1500);
+	loadCSS('https://fonts.googleapis.com/icon?family=Material+Icons');
+}, 500);

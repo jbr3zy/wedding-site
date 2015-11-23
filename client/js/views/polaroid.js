@@ -1,5 +1,6 @@
 var Marionette = require('backbone.marionette');
 var Photo = require('../models/photo');
+var Ripple = require('../utils/ripple');
 var animate = require('velocity-commonjs');
 
 var PolaroidView = Marionette.ItemView.extend({
@@ -9,7 +10,8 @@ var PolaroidView = Marionette.ItemView.extend({
 		photo1: ".photo1",
 		photo2: ".photo2",
 		photo3: ".photo3",
-		photoStack: ".photo-stack"
+		photoStack: ".photo-stack",
+		next: "#next-button"
 	},
 	events: {
 		"hover @ui.photoStack": "animateHover",
@@ -22,7 +24,8 @@ var PolaroidView = Marionette.ItemView.extend({
 		var photo = new Photo({src: this.src});
 		photo.on("change:loaded", this.setImage);
 
-		console.log(this.ui.photoStack);
+		console.log(this.ui.next);
+		Ripple.init(this.ui.next[0], 0.40);
 
 		return this;
 	},
@@ -63,6 +66,13 @@ var PolaroidView = Marionette.ItemView.extend({
 			    queue: false,
 			    easing: "ease-in",
 			});
+			animate(this.ui.next, {
+			    opacity: 1
+			}, {
+			    duration: 100,
+			    queue: false,
+			    easing: "ease-in",
+			});
 		}
 	},
 	animateHoverOff: function() {
@@ -94,6 +104,13 @@ var PolaroidView = Marionette.ItemView.extend({
 			animate(this.ui.photo3, {
 			    rotateZ: "-8deg",
 			    left: "0"
+			}, {
+			    duration: 100,
+			    queue: false,
+			    easing: "ease-out",
+			});
+			animate(this.ui.next, {
+			    opacity: 0,
 			}, {
 			    duration: 100,
 			    queue: false,

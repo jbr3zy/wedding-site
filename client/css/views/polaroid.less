@@ -1,11 +1,13 @@
+@import "../colors.less";
+
 .photo-stack {
 	height: 300px;
     width: 300px;
     border: 10px solid #fff;
     outline: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     background: #ccc;
     position: absolute;
+    cursor: pointer;
     top: 0;
 
     &.photo1 {
@@ -20,4 +22,33 @@
         transform: rotateZ(-8deg);
         left: 0px;
     }
+}
+
+#next-button {
+	color: white;
+	background: @green;
+	border-radius: 100px;
+	position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0;
+    user-select: none;
+
+    i.material-icons {
+		font-size: 44px;
+	}
+}
+
+.photo-stack, #next-button {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#js-ripple {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100px;
+  position: absolute;
+  fill: @light-green;
 }
