@@ -16,15 +16,15 @@ var ripplyScott = (function() {
         deltaY       = (h / 2) + offsetY,
         scale_ratio  = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
 
-    console.log('x is:' + x);
-    console.log('y is:' + y);
-    console.log('offsetX is:' + offsetX);
-    console.log('offsetY is:' + offsetY);
-    console.log('deltaX is:' + deltaX);
-    console.log('deltaY is:' + deltaY);
-    console.log('width is:' + w);
-    console.log('height is:' + h);
-    console.log('scale ratio is:' + scale_ratio);
+    // console.log('x is:' + x);
+    // console.log('y is:' + y);
+    // console.log('offsetX is:' + offsetX);
+    // console.log('offsetY is:' + offsetY);
+    // console.log('deltaX is:' + deltaX);
+    // console.log('deltaY is:' + deltaY);
+    // console.log('width is:' + w);
+    // console.log('height is:' + h);
+    // console.log('scale ratio is:' + scale_ratio);
 
     tl.fromTo(ripple, timing, {
       x: x,
