@@ -5,6 +5,9 @@
         margin: 0;
         padding: 0;
       }
+      button {
+        display: none;
+      }
       #background-image {
         height: 100%;
         width: 100%;
@@ -97,9 +100,11 @@
     <div id="background-cover"></div>
   	<div id="home">
   		<div id="polaroid">
-        <img class="photo-stack photo3" />
-        <img class="photo-stack photo2" />
-        <img id="photo1" class="photo-stack photo1" />
+        <div class="photo-stack photo3"></div>
+        <div class="photo-stack photo2"></div>
+        <div id="photo1" class="photo-stack photo1">
+          <div id="photo-frame"></div>
+        </div>
         <div id="next-button">
           <svg class="ripple-obj" id="js-ripple">
             <use height="100" width="100" xlink:href="#ripple-next" class="js-ripple"></use>

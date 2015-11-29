@@ -20,7 +20,7 @@ var reqCount = 0;
 function checkReqs() {
 	if (reqCount > 0) {
 		myapp.start();
-		$('.photo1').attr('src', imageSource);
+		$('.photo1').css('background-image', 'url(' + imageSource + ')');  
 	} else {
 		reqCount += 1;
 	}

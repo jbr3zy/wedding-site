@@ -6,11 +6,13 @@
     border: 10px solid #fff;
     outline: 1px solid rgba(0, 0, 0, 0);
     background: #ccc;
+    background-size: cover;
     position: absolute;
     cursor: pointer;
     top: 0;
 
     &.photo1 {
+    	border: none;
         transform: rotateZ(9deg);
         left: 40px;
     }
@@ -22,6 +24,12 @@
         transform: rotateZ(-8deg);
         left: 0px;
     }
+}
+
+#photo-frame {
+	border: 10px solid #fff;
+    height: 282px;
+    width: 282px;
 }
 
 #next-button {

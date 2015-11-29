@@ -6,14 +6,18 @@ var animate = require('velocity-commonjs');
 var PhotoSwipe = require('photoswipe');
 var PhotoSwipeUI = require('photoswipe/dist/photoswipe-ui-default');
 
+var PRELOAD_FACTOR = 2;
+
 var PolaroidView = Marionette.ItemView.extend({
 	src: "http://assets.nydailynews.com/polopoly_fs/1.1245686!/img/httpImage/image.jpg_gen/derivatives/article_970/afp-cute-puppy.jpg",
 	animating: false,
 	pswpElement: null,
+	photoStore: [],
+	index: 0,
 	options: {
 	    index: 0,
 	    shareEl: false,
-	    bgOpacity: 0.85,
+	    bgOpacity: 0.75,
 	    fullscreenEl: false,
 	    showHideOpacity:false,
 	    hideAnimationDuration:0,
@@ -23,10 +27,12 @@ var PolaroidView = Marionette.ItemView.extend({
 		photo1: ".photo1",
 		photo2: ".photo2",
 		photo3: ".photo3",
+		photoFrame: "#photo-frame",
 		photoStack: ".photo-stack",
 		next: "#next-button"
 	},
 	events: {
+		"click @ui.next": "nextPhoto",
 		"click @ui.photo1": "openGallery",
 		"hover @ui.photoStack": "animateHover",
 		"mouseenter": "animateHoverOn",
@@ -42,10 +48,52 @@ var PolaroidView = Marionette.ItemView.extend({
 
 		this.pswpElement = document.querySelectorAll('.pswp')[0];
 
+		this.preloadImages();
+
 		return this;
+	},
+	preloadImages: function() {
+		var preloadState = this.photoStore.length;
+		var preloadDiff = (window.pswpItems.length - preloadState);
+		var preloadNum = Math.min(preloadDiff, PRELOAD_FACTOR);
+
+		for (var i = 0; i < preloadNum; i++) {
+			var photo = window.pswpItems[preloadState + i];
+			this.photoStore.push(new Photo({src: photo.src}));
+		}
+	},
+	nextPhoto: function() {
+		this.preloadImages();
+		this.index = (this.index + 1) % this.photoStore.length;
+
+		var photo = this.photoStore[this.index];
+		var frame = this.ui.photoFrame;
+		console.log(frame);
+		var image = this.ui.photo1;
+
+		animate(frame, {
+			backgroundColor: "#ffffff",
+			backgroundColorAlpha: 1
+		}, {
+			duration: 800,
+			queue: false,
+			easing: "ease-in",
+			complete: function() {
+				image.css('background-image', 'url(' + photo.src + ')');
+				animate(frame, {
+					backgroundColor: "#ffffff",
+					backgroundColorAlpha: 0
+				}, {
+					duration: 1800,
+					queue: false,
+					easing: "ease-out"
+				});
+		  	}
+		});
 	},
 	openGallery: function() {
 		var options = this.options;
+		options.index = this.index;
 		options.getThumbBoundsFn = this.thumbBounds;
 		var gallery = new PhotoSwipe(this.pswpElement, PhotoSwipeUI, window.pswpItems, options);
 		gallery.init();
