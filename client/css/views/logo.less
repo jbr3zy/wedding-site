@@ -1,0 +1,62 @@
+@import "../colors.less";
+
+@diamond-height: 20px;
+@diamond-width: 50px;
+
+#logo-container {
+	font-weight: 800;
+	color: @blue;
+	font-family: 'armata';
+}
+
+#title {
+	font-family: 'wisdom';
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+#subtitle {
+	color: @green;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.arctext {
+	fill: @green;
+}
+
+#year-box {
+	margin-top: 30px;
+}
+
+#year-text {
+	width: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #FFF;
+	position: relative;
+	z-index: 1;
+    margin: 0 10px;
+}
+
+#diamond {
+	width: 0;
+	height: 0;
+	border: @diamond-width solid transparent;
+	border-bottom: @diamond-height solid @green;
+	position: absolute;
+	top: -60px;
+	z-index: -1;
+}
+
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -@diamond-width;
+	top: @diamond-height;
+	width: 0;
+	height: 0;
+	border: @diamond-width solid transparent;
+	border-top: @diamond-height solid @green;
+}

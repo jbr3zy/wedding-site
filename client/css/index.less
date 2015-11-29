@@ -1,6 +1,8 @@
 @import (inline) "../../node_modules/photoswipe/dist/photoswipe.css";
 @import (inline) "../../node_modules/photoswipe/dist/default-skin/default-skin.css";
+@import (inline) "fonts.css";
 @import "views/polaroid.less";
+@import "views/logo.less";
 
 body {
 	position: relative;
@@ -17,7 +19,6 @@ img {
 }
 
 #drawer {
-  border: 1px dashed #F00;
   height: 100%;
   width: 45%;
   position: absolute;
@@ -27,10 +28,11 @@ img {
 }
 
 #logo {
-  width: 100px;
+  width: 480px;
   position: absolute;
-  right: 25%;
-  top: 25%;
+  right: 10%;
+  top: 12%;
+  text-align: center;
 }
 
 #polaroid {
