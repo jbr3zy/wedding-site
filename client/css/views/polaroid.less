@@ -12,7 +12,7 @@
     top: 0;
 
     &.photo1 {
-    	border: none;
+        border: none;
         transform: rotateZ(9deg);
         left: 40px;
     }
@@ -62,4 +62,21 @@
   border-radius: 100px;
   position: absolute;
   fill: @light-green;
+}
+
+@media screen and (max-width: @landscape-large) {
+    #polaroid, .photo-stack {
+        height: 220px;
+        width: 220px;
+    }
+    #photo-frame {
+        height: 208px;
+        width: 208px;
+    }
+}
+
+@media screen and (max-width: @landscape-phone) {
+    #next-button {
+        display: none;
+    }
 }

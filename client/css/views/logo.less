@@ -1,4 +1,5 @@
 @import "../colors.less";
+@import "../constants.less";
 
 @diamond-height: 20px;
 @diamond-width: 50px;
@@ -11,19 +12,24 @@
 
 #title {
 	font-family: 'wisdom';
-    font-size: 80px;
+    font-size: 78px;
     text-align: center;
     text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #subtitle {
 	color: @green;
-	font-size: 18px;
+	font-size: 19px;
 	letter-spacing: 1px;
 }
 
 .arctext {
 	fill: @green;
+}
+
+.arctext-box {
+	height: 60px;
+	width: 480px;
 }
 
 #year-box {
@@ -59,4 +65,25 @@
 	height: 0;
 	border: @diamond-width solid transparent;
 	border-top: @diamond-height solid @green;
+}
+
+@media screen and (max-width: @landscape-large) {
+    #title {
+        font-size: 64px;
+    }
+    .arctext-box {
+		width: 380px;
+	}
+}
+
+@media screen and (max-width: @landscape-phone) {
+    #title {
+        font-size: 42px;
+    }
+    .arctext-box {
+		width: 280px;
+	}
+	#year-box {
+		font-size: 14px;
+	}
 }

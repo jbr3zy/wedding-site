@@ -8,11 +8,6 @@ body {
 	position: relative;
 }
 
-img {
-  height: 100px;
-  width: 100px;
-}
-
 #home {
   height: 100%;
   width: 100%;
@@ -30,15 +25,53 @@ img {
 #logo {
   width: 480px;
   position: absolute;
-  right: 10%;
+  left: 50%;
+  margin-left: -8px;
   top: 12%;
   text-align: center;
 }
 
 #polaroid {
-	width: 400px;
+  z-index: 99;
+  width: 400px;
   height: 300px;
 	position: absolute;
-	left: 12%;
+	left: 50%;
+  margin-left: -440px;
 	top: 21%;
+}
+
+@media screen and (max-width: @landscape-large) {
+    body {
+      overflow-y: visible;
+    }
+    #logo {
+      margin-left: -80px;
+    }
+    #polaroid {
+      width: 320px;
+      height: 220px;
+      margin-left: -350px;
+    }
+}
+
+@media screen and (max-width: @landscape-tablet) {
+  #logo {
+    margin-left: -240px;
+    top: 42px;
+  }
+  #polaroid {
+      top: 260px;
+      margin-left: -130px;
+  }
+}
+
+@media screen and (max-width: @landscape-phone) {
+  #logo {
+    width: 300px;
+    margin-left: -150px;
+  }
+  #polaroid {
+    width: 260px;
+  }
 }
