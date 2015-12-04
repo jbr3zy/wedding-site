@@ -1,0 +1,79 @@
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.nav-collapse a {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 112.5%;
+  letter-spacing: 2px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+  background: @blue;
+  border-bottom: 1px solid #FFF;
+  padding: .5em 1em;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 1.25em;
+  padding-right: 18px;
+  text-indent: -9999px;
+  font-size: 32px;
+  float: right;
+}
+
+.nav-toggle:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 26px;
+  height: 0.125em;
+  border-top: 0.445em double @blue;
+  border-bottom: 0.165em solid @blue;
+}
+
+@media screen and (min-width: 400000em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}

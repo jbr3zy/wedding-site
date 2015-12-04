@@ -2,6 +2,7 @@ var App = require('./app');
 var loadCSS = require('./utils/load-css');
 var onloadCSS = require('./utils/onload-css');
 var photos = require('./data');
+var responsiveNav = require('responsive-nav');
 
 var _ = require('underscore');
 var $ = require('jquery');
@@ -20,7 +21,15 @@ var reqCount = 0;
 function checkReqs() {
 	if (reqCount > 0) {
 		myapp.start();
-		$('.photo1').css('background-image', 'url(' + imageSource + ')');  
+		$('.photo1').css('background-image', 'url(' + imageSource + ')');
+		$('#nav-wrapper').show();
+
+		// initiate responsive-nav
+		responsiveNav(".nav-collapse", { // Selector
+		  insert: "after",
+		  animate: true, // Boolean: Use CSS3 transitions, true or false
+		  transition: 284, // Integer: Speed of the transition, in milliseconds
+		});
 	} else {
 		reqCount += 1;
 	}
