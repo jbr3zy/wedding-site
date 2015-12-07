@@ -23,6 +23,7 @@ function checkReqs() {
 		myapp.start();
 		$('.photo1').css('background-image', 'url(' + imageSource + ')');
 		$('#nav-wrapper').show();
+		$('#drawer').show();
 
 		// initiate responsive-nav
 		responsiveNav(".nav-collapse", { // Selector

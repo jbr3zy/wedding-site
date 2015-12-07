@@ -4,9 +4,15 @@
 @import "views/polaroid.less";
 @import "views/logo.less";
 @import "views/menu.less";
+@import "views/drawer.less";
 
 body {
 	position: relative;
+  font-family: 'armata';
+}
+
+.pswp {
+  width: 100%;
 }
 
 #home {
@@ -16,11 +22,13 @@ body {
 
 #drawer {
   height: 100%;
-  width: 45%;
   position: absolute;
-  right: 0;
+  left: 100%;
   top: 0;
-  z-index: -1;
+  z-index: 11;
+  background: @light-gray;
+  border-left: 1px solid @gray;
+  padding-right: 250px;
 }
 
 #logo {
@@ -33,7 +41,7 @@ body {
 }
 
 #polaroid {
-  z-index: 99;
+  z-index: 9;
   width: 400px;
   height: 300px;
 	position: absolute;

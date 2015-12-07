@@ -45,11 +45,14 @@
         position: relative;
         top: 0;
         left: 0;
-        z-index: 999;
+        z-index: 10;
         width: 100%;
       }
       #content {
         position: relative;
+      }
+      #drawer {
+        display: none;
       }
     </style>
   </head>
@@ -121,6 +124,18 @@
         </ul>
       </div>
     </div>
+    <div id="drawer">
+      <div id="drawer-bar"></div>
+      <div id="drawer-header">
+        <div id="nav-button">
+          <span>Close</span>
+          <i class="material-icons">&#xE409;</i>
+        </div>
+        <div id="drawer-title">Directions</div>
+      </div>
+      <div id="drawer-content">
+      </div>
+    </div>
     <div id="content">
       <div id="background-image"></div>
       <div id="background-cover"></div>
@@ -168,7 +183,6 @@
           </div>
     		</div>
   	   </div>
-  	 <div id="drawer"></div>
     </div>
   	<script src="public/js/main.js" type="text/javascript"></script>
   </body>

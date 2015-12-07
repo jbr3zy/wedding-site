@@ -15,16 +15,8 @@ var HomeView = Marionette.LayoutView.extend({
 		polaroid: "#polaroid",
 		logo: "#logo"
 	},
-	moveMe: function() {
-  		animate(this.ui.logo, {
-		    left: 200,
-		}, {
-		    duration: 250, 
-		    easing: "easing"
-		});
-	},
 	initialize: function() {
-        this.listenTo(this.dataChannel, 'expand', this.moveMe);
+        // this.listenTo(this.dataChannel, 'expand', this.moveMe);
     },
 
 	render: function() {
