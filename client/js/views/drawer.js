@@ -24,7 +24,7 @@ var DrawerView = Marionette.LayoutView.extend({
 		animate(this.$el, {
 			left: (window.innerWidth < 768 ? "0%" : "45%"),
 		}, {
-			duration: 625,
+			duration: 825,
 			easing: [500, 20],
 			queue: false
 		});  
@@ -35,7 +35,7 @@ var DrawerView = Marionette.LayoutView.extend({
 		animate(this.$el, {
 			left: "100%"
 		}, {
-			duration: 300,
+			duration: 325,
 			easing: "easeOutQuart",
 			queue: false
 		});  
