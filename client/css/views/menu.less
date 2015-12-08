@@ -40,14 +40,8 @@
 }
 
 .nav-toggle {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
-  display: block;
+  display: none;
   position: relative;
   padding-left: 1.25em;
   padding-right: 6px;
@@ -76,5 +70,11 @@
   }
   .nav-toggle {
     display: none;
+  }
+}
+
+@media screen and (max-width: @landscape-tablet) {
+  .nav-toggle {
+    display: block;
   }
 }

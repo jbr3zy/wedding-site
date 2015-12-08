@@ -67,12 +67,54 @@
 	border-top: @diamond-height solid @green;
 }
 
+.button {
+	font-family: 'armata', sans-serif;
+	border-radius: 6px;
+	background-color: rgba(255,255,255,0.4);
+	border: 2px solid @blue;
+	color: @blue;
+	font-weight: 900;
+	font-size: 13px;
+	padding: 12px;
+	text-transform: uppercase;
+	box-shadow: 3px 3px 4px rgba(71, 83, 105, 0.53);
+	width: 124px;
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.button:hover, .button.active {
+	background-color: @blue;
+	cursor:pointer;
+	transition: background-color 200ms linear;
+    color:white;
+}
+
+#button-container {
+	margin-top: 90px;
+}
+
 @media screen and (max-width: @landscape-large) {
     #title {
         font-size: 64px;
     }
     .arctext-box {
 		width: 380px;
+	}
+	.button {
+	    font-size: 11px;
+	    padding: 9px;
+	    width: 105px;
+	    margin: 0 6px;
+	}
+	#button-container {
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width: @landscape-tablet) {
+	#button-container {
+		display: none;
 	}
 }
 

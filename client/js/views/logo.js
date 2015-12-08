@@ -9,25 +9,29 @@ var LogoView = Marionette.ItemView.extend({
 
 	ui: {
 		title: "#title",
+    directions: "#directions",
+    buttons: ".button"
 	},
 	events: {
-    	"click @ui.title": "openDrawer"
+    	"click @ui.directions": "openDrawer"
   	},
   	initialize: function() {
   		this.listenTo(this.dataChannel, 'open', this.moveOpen);
   		this.listenTo(this.dataChannel, 'close', this.moveClose);
   	},
-	render: function() {
-		this.bindUIElements();
-		return this;
-	},
+  	render: function() {
+  		this.bindUIElements();
+  		return this;
+  	},
   	openDrawer: function() {
+      this.ui.directions.addClass("active");
   		new DrawerView().render();
   	},
   	moveOpen: function() {
   		this.moveMe(true);
   	},
   	moveClose: function() {
+      this.ui.buttons.removeClass("active");
   		this.moveMe(false);
   	},
   	moveMe: function(open) {
