@@ -1,8 +1,8 @@
 @import "../colors.less";
 
 .photo-stack {
-	height: 300px;
-    width: 300px;
+	height: 280px;
+    width: 280px;
     border: 10px solid #fff;
     outline: 1px solid rgba(0, 0, 0, 0);
     background: #ccc;
@@ -12,6 +12,8 @@
     top: 0;
 
     &.photo1 {
+        height: 300px;
+        width: 300px;
         border: none;
         transform: rotateZ(9deg);
         left: 40px;
@@ -37,7 +39,7 @@
 
 #next-button {
 	color: white;
-	background: @green;
+	background: @blue;
 	border-radius: 100px;
 	position: absolute;
     right: 0;
@@ -61,7 +63,7 @@
   overflow: hidden;
   border-radius: 100px;
   position: absolute;
-  fill: @light-green;
+  fill: @blue-gray;
 }
 
 @media screen and (max-width: @landscape-large) {
@@ -70,8 +72,12 @@
         width: 220px;
     }
     #photo-frame {
-        height: 208px;
-        width: 208px;
+        height: 222px;
+        width: 222px;
+    }
+    .photo-stack.photo1 {
+        height: 240px;
+        width: 240px;
     }
 }
 

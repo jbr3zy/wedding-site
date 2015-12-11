@@ -9,14 +9,16 @@ var $ = require('jquery');
 var HomeView = Marionette.LayoutView.extend({
 	el: "#home",
 
-	dataChannel: Radio.channel('data'),
+	dataChannel: Radio.channel('drawer'),
 
 	ui: {
 		polaroid: "#polaroid",
-		logo: "#logo"
+		logo: "#logo",
+		shade: "#shade"
 	},
 	initialize: function() {
-        // this.listenTo(this.dataChannel, 'expand', this.moveMe);
+		this.listenTo(this.dataChannel, 'open', this.shadeOn);
+		this.listenTo(this.dataChannel, 'close', this.shadeOff);
     },
 
 	render: function() {
@@ -27,10 +29,27 @@ var HomeView = Marionette.LayoutView.extend({
 		view.render();
 		new PolaroidView({el: this.ui.polaroid}).render();
 
-		this.$el.fadeIn();
+		this.$el.fadeIn(1500);
 
 		return this;
 	},
+
+	shadeOn: function() {
+		this.turnShade(true);
+	},
+
+	shadeOff: function() {
+		this.turnShade(false);
+	},
+
+	turnShade: function(show) {
+		if (show) {
+			console.log(this.$shade);
+			this.ui.shade.fadeIn(250);
+		} else {
+			this.ui.shade.fadeOut();
+		}
+	}
 
 });
 

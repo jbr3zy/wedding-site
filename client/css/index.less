@@ -20,6 +20,16 @@ body {
   width: 100%;
 }
 
+#shade {
+  height: 100%;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  z-index: 9;
+  opacity: .3;
+  display: none;
+}
+
 #drawer {
   height: 100%;
   position: absolute;
@@ -30,6 +40,7 @@ body {
   border-left: 1px solid @gray;
   padding-right: 250px;
   transform: translate3d(0,0,0);
+  box-shadow: -3px -1px 3px @dark-gray;
 }
 
 #logo {

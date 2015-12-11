@@ -20,7 +20,6 @@ var imageSource = photos[0].src;
 var reqCount = 0;
 function checkReqs() {
 	if (reqCount > 0) {
-		myapp.start();
 		$('.photo1').css('background-image', 'url(' + imageSource + ')');
 		$('#nav-wrapper').show();
 		$('#drawer').show();
@@ -31,6 +30,7 @@ function checkReqs() {
 		  animate: true, // Boolean: Use CSS3 transitions, true or false
 		  transition: 284, // Integer: Speed of the transition, in milliseconds
 		});
+		myapp.start();
 	} else {
 		reqCount += 1;
 	}
