@@ -2,7 +2,6 @@ var App = require('./app');
 var loadCSS = require('./utils/load-css');
 var onloadCSS = require('./utils/onload-css');
 var photos = require('./data');
-var responsiveNav = require('responsive-nav');
 
 var _ = require('underscore');
 var $ = require('jquery');
@@ -14,22 +13,13 @@ var options = {
 
 var myapp = new App(options);
 
-window.pswpItems = photos;
-var imageSource = photos[0].src;
+window.pswpItems = _.shuffle(photos);
+var imageSource = window.pswpItems[0].src;
 
 var reqCount = 0;
 function checkReqs() {
 	if (reqCount > 0) {
 		$('.photo1').css('background-image', 'url(' + imageSource + ')');
-		$('#nav-wrapper').show();
-		$('#drawer').show();
-
-		// initiate responsive-nav
-		responsiveNav(".nav-collapse", { // Selector
-		  insert: "after",
-		  animate: true, // Boolean: Use CSS3 transitions, true or false
-		  transition: 284, // Integer: Speed of the transition, in milliseconds
-		});
 		myapp.start();
 	} else {
 		reqCount += 1;

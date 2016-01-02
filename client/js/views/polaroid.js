@@ -3,6 +3,7 @@ var Photo = require('../models/photo');
 var Ripple = require('../utils/ripple');
 var animate = require('velocity-commonjs');
 var Radio = require('backbone.radio');
+var $ = require('jquery');
 
 
 var Gallery = require('./gallery');
@@ -49,14 +50,18 @@ var PolaroidView = Marionette.ItemView.extend({
 		});
   	},
 	render: function() {
-		this.bindUIElements();
+		var self = this;
+		self.bindUIElements();
 
-		var photo = new Photo({src: this.src});
-		photo.on("change:loaded", this.setImage);
+		var photo = new Photo({src: self.src});
+		photo.on("change:loaded", self.setImage);
 
-		Ripple.init(this.ui.next[0], 0.40);
+		Ripple.init(self.ui.next[0], 0.40);
 
-		this.preloadImages();
+		self.preloadImages();
+		setTimeout(function() {
+			self.autoPhoto();
+		}, 30000);
 
 		return this;
 	},
@@ -70,29 +75,36 @@ var PolaroidView = Marionette.ItemView.extend({
 			this.photoStore.push(new Photo({src: photo.src}));
 		}
 	},
+	autoPhoto: function() {
+		var self = this;
+		if ($(".pswp").first().attr("aria-hidden") == "true") {
+			self.nextPhoto();
+		}
+		setTimeout(function() {
+			self.autoPhoto();
+		}, 60000);
+	},
 	nextPhoto: function() {
 		this.preloadImages();
 		this.index = (this.index + 1) % this.photoStore.length;
 
 		var photo = this.photoStore[this.index];
 		var frame = this.ui.photoFrame;
-		console.log(frame);
 		var image = this.ui.photo1;
 
 		animate(frame, {
 			backgroundColor: "#ffffff",
 			backgroundColorAlpha: 1
 		}, {
-			duration: 800,
+			duration: 50,
 			queue: false,
-			easing: "ease-in",
 			complete: function() {
 				image.css('background-image', 'url(' + photo.src + ')');
 				animate(frame, {
 					backgroundColor: "#ffffff",
 					backgroundColorAlpha: 0
 				}, {
-					duration: 1800,
+					duration: 1000,
 					queue: false,
 					easing: "ease-out"
 				});

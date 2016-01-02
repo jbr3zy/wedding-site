@@ -37,10 +37,10 @@ body {
   top: 0;
   z-index: 11;
   background: @light-gray;
-  border-left: 1px solid @gray;
   padding-right: 250px;
   transform: translate3d(0,0,0);
   box-shadow: -3px -1px 3px @dark-gray;
+  overflow-y: hidden;
 }
 
 #logo {
@@ -83,11 +83,11 @@ body {
 @media screen and (max-width: @landscape-tablet) {
   #logo {
     margin-left: -240px;
-    top: 42px;
+    top: 72px;
   }
   #polaroid {
-      top: 260px;
-      margin-left: -130px;
+      top: 300px;
+      margin-left: -140px;
   }
 }
 
@@ -97,6 +97,7 @@ body {
     margin-left: -150px;
   }
   #polaroid {
+    top: 260px;
     width: 260px;
   }
 }

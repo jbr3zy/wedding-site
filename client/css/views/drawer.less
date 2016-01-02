@@ -5,7 +5,20 @@
 #drawer-header {
 	height: 24px;
 	color: white;
-	padding: 12px 10px;
+	padding: 12px 10px 8px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+#drawer-scroller {
+	height: 100%;
+    overflow: scroll;
+    top: -44px;
+    position: relative;
+}
+
+#drawer-content {
+	padding-top: 44px;
 }
 
 #drawer-bar {
@@ -13,8 +26,8 @@
 	width: 100%;
 	height: 44px;
 	background: @blue;
-	box-shadow: 2px 2px 4px rgba(0,0,0,.3);
-	z-index: -1;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+	z-index: 1;
 	left: -1px;
 }
 
@@ -37,6 +50,30 @@
     width: 200px;
     margin: auto;
     text-align: center;
+}
+
+.card {
+	margin: 10px;
+    padding: 64px 14px 14px;
+    background: #FFF;
+    border-radius: 4px;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    box-shadow: 1px 1px 6px #CCC;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.card > .title {
+	position: absolute;
+    left: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    top: 0;
+    width: 100%;
+    /* background: #D8E0EC; */
+    padding: 14px;
+    border-bottom: 1px solid #CCC;
 }
 
 @media screen and (max-width: @landscape-tablet) {

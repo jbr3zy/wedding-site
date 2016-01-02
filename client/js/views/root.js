@@ -1,6 +1,6 @@
-var Marionette = require('backbone.marionette')
-var HomeView = require('./home')
-var PolaroidView = require('./polaroid')
+var Marionette = require('backbone.marionette');
+var HomeView = require('./home');
+var MenuView = require('./menu');
 
 var RootView = Marionette.LayoutView.extend({
 	phrase: null,
@@ -19,6 +19,7 @@ var RootView = Marionette.LayoutView.extend({
 		console.log(this.phrase);
 
 		new HomeView().render();
+		new MenuView().render();
 
 		return this;
 	}

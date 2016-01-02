@@ -25,7 +25,7 @@ var LogoView = Marionette.ItemView.extend({
   	},
   	openDrawer: function() {
       this.ui.directions.addClass("active");
-  		new DrawerView().render();
+      new DrawerView().render();
   	},
   	moveOpen: function() {
   		this.moveMe(true);
@@ -36,13 +36,22 @@ var LogoView = Marionette.ItemView.extend({
   	},
   	moveMe: function(open) {
   		console.log(open);
+      var width = window.innerWidth;
+      var buffer = this.isTablet() ? 420 : 532;
+      var leftPoint = width*.45 - buffer;
+      if (!open) {
+        leftPoint = width*.5;
+      }
   		animate(this.$el, {
-		    left: (open ? "1%" : "50%"),
-		}, {
-		    duration: 125,
-		    queue: false 
-		});
-  	}
+		    left: leftPoint/width*100 + "%",
+  		}, {
+  		    duration: 125,
+  		    queue: false 
+  		});
+  	},
+    isTablet: function() {
+      return (window.innerWidth < 960);
+    }
 });
 
 module.exports = LogoView;

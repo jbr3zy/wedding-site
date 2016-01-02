@@ -29,7 +29,8 @@ var HomeView = Marionette.LayoutView.extend({
 		view.render();
 		new PolaroidView({el: this.ui.polaroid}).render();
 
-		this.$el.fadeIn(1500);
+		this.$el.fadeIn(1200);
+		$('#nav-wrapper').fadeIn(1200);
 
 		return this;
 	},
