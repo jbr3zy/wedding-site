@@ -11,7 +11,7 @@ var DrawerView = Marionette.LayoutView.extend({
 	template: "#drawerTemplate",
 	id: "drawer",
 	dataChannel: Radio.channel('drawer'),
-
+	title:"",
 	ui: {
 		title: "#drawer-title",
 		content: "#drawer-content",
@@ -61,15 +61,25 @@ var DrawerView = Marionette.LayoutView.extend({
 			}
 		}); 
 	},
-	initialize: function() {
-		//
+	initialize: function(options) {
+		this.title = options.title;
     },
     onRender: function() {
     	$("#wrapper").append(this.el);
-    	this.getRegion("content").show(new DirectionsView());
+    	this.ui.title.html(this.title);
+    	if (this.title == "Accommodations") {
+    		this.getRegion("content").show(new DirectionsView());
+    	} else {
+    		this.getRegion("content").show(new RsvpView());
+    	}
     	/// debugger;
     	this.openDrawer();
     }
+});
+
+var RsvpView = Marionette.ItemView.extend({
+	template: "#rsvpTemplate",
+	className: "rsvp-content"
 });
 
 module.exports = DrawerView;

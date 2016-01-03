@@ -10,10 +10,12 @@ var LogoView = Marionette.ItemView.extend({
 	ui: {
 		title: "#title",
     directions: "#directions",
-    buttons: ".button"
+    buttons: ".button",
+    rsvp: "#rsvp"
 	},
 	events: {
-    	"click @ui.directions": "openDrawer"
+    	"click @ui.directions": "openDrawer",
+      "click @ui.rsvp": "openRsvp"
   	},
   	initialize: function() {
   		this.listenTo(this.dataChannel, 'open', this.moveOpen);
@@ -23,9 +25,13 @@ var LogoView = Marionette.ItemView.extend({
   		this.bindUIElements();
   		return this;
   	},
+    openRsvp: function() {
+      this.ui.directions.addClass("active");
+      new DrawerView({"title":"Rsvp"}).render();
+    },
   	openDrawer: function() {
       this.ui.directions.addClass("active");
-      new DrawerView().render();
+      new DrawerView({"title":"Accommodations"}).render();
   	},
   	moveOpen: function() {
   		this.moveMe(true);
