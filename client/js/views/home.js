@@ -45,7 +45,6 @@ var HomeView = Marionette.LayoutView.extend({
 
 	turnShade: function(show) {
 		if (show) {
-			console.log(this.$shade);
 			this.ui.shade.fadeIn(250);
 		} else {
 			this.ui.shade.fadeOut();

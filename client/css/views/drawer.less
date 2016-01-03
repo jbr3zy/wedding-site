@@ -59,7 +59,7 @@
     border-radius: 4px;
     border-bottom: 1px solid #CCC;
     border-right: 1px solid #CCC;
-    box-shadow: 1px 1px 6px #CCC;
+    box-shadow: 1px 1px 6px #BBB;
     position: relative;
     overflow-x: hidden;
     font-size: 14px;
@@ -102,6 +102,13 @@
 	display: none;
 }
 
+.lb-nav a {
+	&.lb-next,
+	&.lb-prev {
+		width: 0;
+	}
+}
+
 .acc {
 	.button {
 	    text-decoration: none;
@@ -112,6 +119,13 @@
 	    margin: 9px;
 	    margin-left: 0;
 	    padding: 8px;
+	    border: 1px solid #CCC;
+	    min-width: 0;
+
+	    &.bottom {
+	    	display: none;
+	    	margin: 6px 0 0 6px;
+	    }
 	}
 	.card>.title {
 		padding: 0;
@@ -125,4 +139,20 @@
     #drawer {
     	width: 100%;
     }
+}
+
+@media screen and (max-width: @landscape-phone) {
+    .acc {
+    	.card {
+    		font-size: 12px;
+    	}
+		.button {
+			&.bottom {
+				display: inline;
+			}
+			&.top {
+				display: none;
+			}
+		}
+	}
 }

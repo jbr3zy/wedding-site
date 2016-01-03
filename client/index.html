@@ -8,6 +8,7 @@
         overflow-x: hidden;
         overflow-y: hidden;
         font-family: Arial;
+        height: 100%;
       }
       button {
         display: none;
@@ -157,7 +158,7 @@
           </div>
       		<div id="logo">
       			<div id="logo-container">
-              <div id="title">Emily &amp; Justin</div>
+<div id="title">Emily &amp; Justin</div>
               <div id="year-box">
                 AUGUST
                 <div id="year-text">
@@ -166,16 +167,28 @@
                 </div>
                 SIXTH
               </div>
-              <div id="subtitle">
-                <svg class="arctext-box" viewBox="0 0 480 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <path id="textPath" d="M10,20 Q 240,100 470,20" />
-                  </defs>
-                  <text class="arctext" text-anchor="middle" x="240" y="30">
-                    <textPath xlink:href="#textPath">FRENCH'S POINT &bull; STOCKTON SPRINGS, MAINE</textPath>
-                  </text>
-                </svg>
-              </div>
+<svg class="arctext-box" viewBox="0 0 466 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="3" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0,119 C0,119 89.1403831,198 265.615341,198 C442.090299,198 523,119 523,119"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-35.000000, -130.000000)">
+            <path id="textPath" d="M0,119 C0,119 89.1403831,198 265.615341,198 C442.090299,198 523,119 523,119" sketch:type="MSShapeGroup"></path>
+            <text sketch:type="MSTextLayer" font-family="Armata" font-size="21" font-weight="normal" fill="#97AF9B">
+                    <textPath xlink:href="#textPath" x="32" y="185" startOffset="50">FRENCH'S POINT &bull; STOCKTON SPRINGS, MAINE</textPath>
+            </text>
+        </g>
+    </g>
+</svg>
               <div id="button-container">
                 <div id="details" class="button">Details</div>
                 <div id="directions"class="button">Accommodations</div>
@@ -204,14 +217,16 @@
     <script id="placeCardTemplate" type="template">
         <div class="title">
           <div class="card-title">Location</div>
-          <a class="button website" target="_blank">Website</a>
-          <a class="button map" data-lightbox="image-1">Map</a>
+          <a class="top button website" target="_blank">Website</a>
+          <a class="top button map" data-lightbox="image-1">Map</a>
         </div>
         <div>
           <div class="sleeps"><div class="label">Sleeps:</div><span class="value"></span></div>
           <div class="contact"><div class="label">Contact:</div><span class="value"></span></div>
           <div class="phone"><div class="label">Phone:</div><a class="value"></a></div>
           <div class="email"><div class="label">Email:</div><a class="value"></a></div>
+          <a class="bottom button website" target="_blank">Website</a>
+          <a class="bottom button map" data-lightbox="image-1">Map</a>
         </div>
     </script>
 

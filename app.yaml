@@ -1,0 +1,19 @@
+application: emily-and-justin
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+skip_files:
+- ^(\.git/.*)
+- ^(node_modules/.*)
+- ^(client/css/.*)
+- ^(client/js/.*)
+- ^(.*/)?\.DS_Store$
+
+handlers:
+- url: /
+  static_files: client/index.html
+  upload: client/index.html
+- url: /public
+  static_dir: client/public

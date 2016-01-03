@@ -115,7 +115,6 @@ var PolaroidView = Marionette.ItemView.extend({
 		new Gallery({index: this.index});
 	},
 	setImage: function() {
-		console.log('hey');
 	},
 	animateHoverOn: function() {
 		if (this.animating){

@@ -47,7 +47,6 @@ var LogoView = Marionette.ItemView.extend({
   		this.moveMe(false);
   	},
   	moveMe: function(open) {
-  		console.log(open);
       var width = window.innerWidth;
       var buffer = this.isTablet() ? 420 : 532;
       var leftPoint = width*.45 - buffer;

@@ -25,13 +25,11 @@ var DrawerView = Marionette.LayoutView.extend({
 		"content": "#drawer-content"
 	},
 	hello: function() {
-		console.log('hello');
 	},
 	isMobile: function() {
 		return (window.innerWidth <= 768)
 	},
 	openDrawer: function() {
-		console.log(this.$el.width());
 		if (!this.isMobile()) {
 			this.dataChannel.trigger('open');
 		}

@@ -16,8 +16,6 @@ var RootView = Marionette.LayoutView.extend({
 	},
 
 	render: function() {
-		console.log(this.phrase);
-
 		new HomeView().render();
 		new MenuView().render();
 
