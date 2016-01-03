@@ -69,6 +69,8 @@ var DrawerView = Marionette.LayoutView.extend({
     	this.ui.title.html(this.title);
     	if (this.title == "Accommodations") {
     		this.getRegion("content").show(new DirectionsView());
+    	} else if (this.title == "Details") {
+    		this.getRegion("content").show(new DetailsView());
     	} else {
     		this.getRegion("content").show(new RsvpView());
     	}
@@ -79,7 +81,11 @@ var DrawerView = Marionette.LayoutView.extend({
 
 var RsvpView = Marionette.ItemView.extend({
 	template: "#rsvpTemplate",
-	className: "rsvp-content"
+	className: "card"
+});
+
+var DetailsView = Marionette.ItemView.extend({
+	template: "#detailsTemplate"
 });
 
 module.exports = DrawerView;

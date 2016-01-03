@@ -130,7 +130,8 @@ var DirectionsView = Marionette.ItemView.extend({
 	initialize: function() {
 		lightbox.option({
       		'resizeDuration': 250,
-      		'fadeDuration': 250
+      		'fadeDuration': 250,
+      		'showImageNumberLabel': false
     	});
     },
     onRender: function() {

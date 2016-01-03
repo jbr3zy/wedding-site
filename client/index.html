@@ -126,9 +126,9 @@
       <div id="nav-wrapper">
         <div class="nav-collapse">
           <ul>
-              <li id="nav-rsvp"><a href="#">RSVP</a></li>
-              <li id="nav-directions"><a href="#">Directions</a></li>
+              <li id="nav-details"><a href="#">Details</a></li>              
               <li id="nav-accommodations"><a href="#">Accommodations</a></li>
+              <li id="nav-rsvp"><a href="#">RSVP</a></li>
           </ul>
         </div>
       </div>
@@ -221,7 +221,31 @@
     </script>
 
    <script id="rsvpTemplate" type="template">
-      hi there
+    <div class="title">
+      <div class="card-title">Coming soon!</div>
+    </div>
+    <div>
+      We&apos;ll be sending an invitation via email soon! You&apos;ll be able to RSVP here.
+    </div>
+   </script>
+
+   <script id="detailsTemplate" type="template">
+    <div class="card">
+      <div class="title">
+        <div class="card-title">Location</div>
+      </div>
+      <div>
+        The wedding is at French&apos;s Point.
+      </div>
+    </div>
+    <div class="card">
+      <div class="title">
+        <div class="card-title">No gifts</div>
+      </div>
+      <div>
+        For those feeling particularly burdened, we invite you to share your favorite bottle of wine or spirits.
+      </div>
+    </div>
    </script>
 
     <script src="public/js/main.js" type="text/javascript"></script>

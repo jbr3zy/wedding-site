@@ -9,17 +9,21 @@ var MenuView = Marionette.ItemView.extend({
   el: "#nav-wrapper",
 	ui: {
 		rsvp: "#nav-rsvp",
-    directions: "#nav-directions",
+    details: "#nav-details",
     accommodations: "#nav-accommodations"
 	},
 	events: function() {
     if ("ontouchstart" in document.documentElement) {
         return {
-          "touchend @ui.directions": "openDrawer"
+          "touchend @ui.accommodations": "openDrawer",
+          "touchend @ui.details": "openDetails",
+          "touchend @ui.rsvp": "openRsvp"
         }
     }
     return {
-    	"mouseup @ui.directions": "openDrawer"
+    	"mouseup @ui.accommodations": "openDrawer",
+      "mouseup @ui.details": "openDetails",
+      "mouseup @ui.rsvp": "openRsvp"
     }
 	},
 	initialize: function() {
@@ -37,9 +41,17 @@ var MenuView = Marionette.ItemView.extend({
 		return this;
 	},
 	openDrawer: function() {
-    this.ui.directions.addClass("active");
-		new DrawerView().render();
-	}
+    this.ui.accommodations.addClass("active");
+		new DrawerView({"title": "Accommodations"}).render();
+	},
+  openDetails: function() {
+    this.ui.details.addClass("active");
+    new DrawerView({"title": "Details"}).render();
+  },
+  openRsvp: function() {
+    this.ui.rsvp.addClass("active");
+    new DrawerView({"title": "RSVP"}).render();
+  }
 });
 
 module.exports = MenuView;
