@@ -177,9 +177,9 @@
                 </svg>
               </div>
               <div id="button-container">
+                <div id="details" class="button">Details</div>
+                <div id="directions"class="button">Accommodations</div>
                 <div id="rsvp" class="button">RSVP</div>
-                <div id="directions" class="button">Directions</div>
-                <div class="button">Accommodations</div>
               </div>
             </div>
       		</div>
@@ -206,7 +206,13 @@
           <span class="card-title">Location</span>
         </div>
         <div>
-          <a>246 Hersey Retreat Road, Stockton Springs, ME</a>
+          <div class="sleeps"><div class="label">Sleeps:</div><span class="value"></span></div>
+          <div class="contact"><div class="label">Contact:</div><span class="value"></span></div>
+          <div class="phone"><div class="label">Phone:</div><a class="value"></a></div>
+          <div class="email"><div class="label">Email:</div><a class="value"></a></div>
+
+          <a class="button website" target="_blank">Website</a>
+          <a class="button map" data-lightbox="image-1">Map</a>
         </div>
     </script>
     <script id="directionsTemplate" type="template">
