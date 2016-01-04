@@ -48,12 +48,6 @@ module.exports = [
         h: 640
     },
     {
-        src: "public/img/slideshow/9.jpg",
-        msrc: "public/img/slideshow/9.jpg",
-        w: 640,
-        h: 640
-    },
-    {
         src: "public/img/slideshow/10.jpg",
         msrc: "public/img/slideshow/10.jpg",
         w: 640,
@@ -189,6 +183,18 @@ module.exports = [
         src: "public/img/slideshow/32.jpg",
         msrc: "public/img/slideshow/32.jpg",
         w: 853,
+        h: 640
+    },
+    {
+        src: "public/img/slideshow/33.jpg",
+        msrc: "public/img/slideshow/33.jpg",
+        w: 640,
+        h: 640
+    },
+    {
+        src: "public/img/slideshow/34.jpg",
+        msrc: "public/img/slideshow/34.jpg",
+        w: 1138,
         h: 640
     },
 ];

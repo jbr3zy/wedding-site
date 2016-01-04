@@ -48,12 +48,18 @@ var PlaceItemView = Marionette.ItemView.extend({
         	var contact = this.model.get("contact");
         	var phone = this.model.get("phone");
         	var email = this.model.get("email");
+            var sleeps = this.model.get("sleeps");
 
         	var location = this.model.get("location");
         	var website = this.model.get("website");
 
         	this.ui.name.html(this.model.get("name"));
-        	this.ui.sleeps.html(this.model.get("sleeps"));
+
+            if (sleeps == 0) {
+                this.ui.sleeps.parent().addClass("hide");
+            } else {
+                this.ui.sleeps.html(sleeps);
+            }
 
         	if (phone == "") {
         		this.ui.phone.parent().addClass("hide");

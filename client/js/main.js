@@ -20,11 +20,17 @@ var reqCount = 0;
 function checkReqs() {
 	if (reqCount > 0) {
 		$('.photo1').css('background-image', 'url(' + imageSource + ')');
+		clearTimeout(window.loaderTimer);
+		$('.loader').fadeOut();
 		myapp.start();
 	} else {
 		reqCount += 1;
 	}
 }
+
+window.loaderTimer = setTimeout(function() {
+   $('.loader').fadeIn();
+}, 450);
 
 // Get those styles in there
 var styles = loadCSS('public/css/styles.min.css');
