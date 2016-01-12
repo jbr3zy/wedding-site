@@ -127,7 +127,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "aldenhouse@me.com",
 		"phone": "207-338-2151",
-		"website": "thealdenhouse.com",
+		"website": "http://thealdenhouse.com",
 		"location": "44.423012,-69.003746",
 		"polyline": "yjcnGlhddLgS|\\kCfE{@tAsCjFsBzDmAdB}@~@qE|DaEpDgA`ASa@s@iBo@}AUOQcAEWIMm@{CiFe\\k@qE@KMgAQ{BIwB?mAPuEDs@AWVoD`BuTlAwOr@uGz@eGlAaGjA{E~@iDpAyDbAmCjCuGfDgIf@{Ah@aCRiANwAJkBBcB?eBM{Cs@gLgAgRaAcP_@cIg@_I}@_L_B_SyAsQ]{C_A_Gk@qCoAaFeBmGuA}FoA}Ge@}CaAeIm@{Hm@kI{@iIwAoJg@wCg@sBc@aBkAmD_A_CeCgFaBwBs@u@aBsAqAu@q@[wA}@_O{IcAm@aBw@qCmAeD_AeH}A{MsCcCs@sDwAmCkAeDkAwEoA}@QkBWsCYg@K_AYqAo@mA_Ac@i@e@u@[q@Y{@eAsEg@sCYkAe@oAq@uAiDeFkAyBe@sAe@wCMqA?m@@uAVwCVeBPw@`A_E\\iB^qBLmAZ_FJwBBs@CeAIgAKs@S}@m@mB}GuR{@sBcCkF}AsDkGwO}E}LgA{BeAgB{@gAyAuA}HaH}FeFgAiAg@q@}@wAm@oAa@eAg@}AuBsIaEuPsBaHkF{NuBsFmCqGyCkHe@iBYaB_@cDi@}DWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FuAaBkSyTuCaDyAcBoAeBiBcDgAeCuB{F_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCiB}HsOqp@uAgF_BiEcBwDq@qAoS_`@ab@mw@RYPyAb@sEJgFDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	},
@@ -138,7 +138,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "info@belfastbayinn.com",
 		"phone": "207-338-5600",
-		"website": "belfastbayinn.com",
+		"website": "http://belfastbayinn.com",
 		"location": "44.426486,-69.006007",
 		"polyline": "i`dnGntddLLBd@^x@p@q@`CyC`MaA~DsCjFsBzDmAdB}@~@qE|DaEpDgA`ASa@s@iBo@}AUOQcAEWIMm@{CiFe\\k@qE@KMgAQ{BIwB?mAPuEDs@AWVoD`BuTlAwOr@uGz@eGlAaGjA{E~@iDpAyDbAmCjCuGfDgIf@{Ah@aCRiANwAJkBBcB?eBM{Cs@gLgAgRaAcP_@cIg@_I}@_L_B_SyAsQ]{C_A_Gk@qCoAaFeBmGuA}FoA}Ge@}CaAeIm@{Hm@kI{@iIwAoJg@wCg@sBc@aBkAmD_A_CeCgFaBwBs@u@aBsAqAu@q@[wA}@_O{IcAm@aBw@qCmAeD_AeH}A{MsCcCs@sDwAmCkAeDkAwEoA}@QkBWsCYg@K_AYqAo@mA_Ac@i@e@u@[q@Y{@eAsEg@sCYkAe@oAq@uAiDeFkAyBe@sAe@wCMqA?m@@uAVwCVeBPw@`A_E\\iB^qBLmAZ_FJwBBs@CeAIgAKs@S}@m@mB}GuR{@sBcCkF}AsDkGwO}E}LgA{BeAgB{@gAyAuA}HaH}FeFgAiAg@q@}@wAm@oAa@eAg@}AuBsIaEuPsBaHkF{NuBsFmCqGyCkHe@iBYaB_@cDi@}DWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FuAaBkSyTuCaDyAcBoAeBiBcDgAeCuB{F_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCiB}HsOqp@uAgF_BiEcBwDq@qAoS_`@uRu^kNwWRYPyAb@sEJgFDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	},
@@ -149,7 +149,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "stay@belfastharborinn.com",
 		"phone": "207.338.2740",
-		"website": "belfastharborinn.com",
+		"website": "http://belfastharborinn.com",
 		"location": "44.431219,-68.989746",
 		"polyline": "q~dnGnpadLxA_EvFgNz@uBf@{Ah@aCRiANwAJkBBcB?eBM{Cs@gLgAgRaAcP_@cIg@_IaBgSuCk^]{C_A_Gk@qCoAaFeBmGuA}FoA}Ge@}CaAeIKeAoAaQ{@iIwAoJg@wCg@sBc@aBkAmD_A_CeCgFaBwBs@u@aBsAqAu@q@[wA}@_O{IcAm@aBw@qCmAeD_AiNyCwGwAcCs@sDwAmCkAeDkAq@SeD{@}@QkBWsCYg@K_AYo@Wa@WmA_Au@aAo@oAY{@[wAi@{Bg@sCYkAe@oAq@uAqAoBwAuBkAyBe@sASkAQkAMqA?{AHgBZmC\\gB`A_E\\iB^qBLmANmBT{DDaBCeAIgA_@qBm@mBcEkLyAiE{@sBcCkF}AsDiNu]gA{BeAgB{@gAyAuA{PgOgAiAg@q@}@wAm@oAa@eA{@sCcHsYsBaHcC{GgB_FuBsFmCqGyCkHe@iBYaBiAaJWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FwEmF_ToU_CsCi@u@iBcDgAeC}@_Cw@{B_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCgOso@uB{IuAgF_BiEcBwDuO}YsRq^kJiQmHeNRYPyAb@sEFsBBsBDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	},
@@ -160,7 +160,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "brendajliston@gmail.com",
 		"phone": "207-548-1104",
-		"website": "captainnickelsinn.com",
+		"website": "http://captainnickelsinn.com",
 		"location": "44.458649,-68.914526",
 		"polyline": "kijnGrzrcLmD}J}@cCaBsDmBaEiNu]wAeDu@yAiAaBsAyAwOeNkBeB{@cAoAmBcAyB{@oCyEcS{CgLcCaH}E_NwGwOmAeDc@uBaA}H_@_Ci@iCeAoDkAwCeAyB_JoQ}FsJ_B}CkAqCeFmO_A_Cq@uAoDyFiEmGmBoCkAuAa@c@eUwVcCqCi@q@k@w@kAmB_BcDo@_BgB_FWi@CUo@iBmAgD{AcF[yAUwAc@{FAw\\CmCGwASgC]eC_@mBwH_\\_Jq_@gBsFgAqCaBiDaIgO_Rq]eMyUiH{MsB}DRYb@aEPkBBs@DmBFuJAsRrBQlJk@~HGhBMvAKvHjBz@HlBCn@Ep@?fCd@"
 	},
@@ -171,7 +171,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "stay@camdenharbourinn.com",
 		"phone": "207-236-4200",
-		"website": "camdenharbourinn.com",
+		"website": "http://camdenharbourinn.com",
 		"location": "44.206027,-69.061250",
 		"polyline": "s~xlG|oodLaCdBaGtFaB|A_GtFIb@OGKAe@?{DFmDH]Uk@{@cR}ZwEiFmSkU}F_KmAcB{AwAuBoA{IcCsHcDaGaDsH}FoEyC{BkA{P}FmGcC_F{C{DsC}@mA}CeHwDsIoB}C_DmD}CcCwEuBqK_EgPgFyKmF{HqF{GyFkG}EuFgFqMgOyGcKcF}GeIgIsCiC_GkEoDyB}DaAyCs@aCgAoCiBaG}DwEcC{J{EgCiBkDwCsHgE}RgL{O}IkHcBsFK}HDkD^uEH_L{@sOwAoPi@cE[oB_@iCgAcC{AuAyAy@{AiB}EsA}Fe@}EeBqWmAuHiAoEcD{JeCcJyA}Gw@mFUgDUiZSsJi@aF_AcEeAoCgCmFcB}B}BoB}IsFeFcD_GkE_JyIcIcIaBqAuDeBqW}FoCu@mB{@kB}AqA{AqAyB{AcEyBoFqBmCeM}KyGaEcZaPoFwAsEy@aBM}CHwBb@}Bz@_BbAeCdCcBpCcGrMmEhIeT|]mBzBsCjBcCt@{APiCAwEa@cJmA{H{AyO_EaDs@{DCwB^sAd@aDvBuA~A}AlCaLfTcDlFiAvAiDdDuHfFs_@|ViV~OqEtBeCp@iBZsOzAuZxC_HrA}EbBwDlBgTjM}LtGgCp@sBFyB[_Bq@oCkBeDoC}C{BoCsAiLcDiC[qCJ{@L{@TsD`ByQzIcTnKuB~AwBzBmBjC}AnC{ApDkAzDmClOkFn]uAzHoChReBxLgAlGaB|GkBxFqCnGaClEkCvDgD~C}A~AaEvCU^kAf@_H~BkKvBaMfBaDFqDUuBa@eDcByCyBuDgE_CcEcCuGcAgEcAoGkAcHeA}EiFo\\}@oJGsCVoHv@yLbCy[vAsMhCyMtCmK|@iCbKcW~@aEb@gEDeEa@cJcFa|@iFqp@_B{NiBsImEoPwBgLcBsN{@qLi@eGyAkLiCwMwBwG}DeIwDcEoDuB{SgMcHyCe]{HuPoG_FmA}G{@eCs@eAk@gBkBk@aAw@eCaAwEgAuEmBsDaEmG}@yCa@}CEeB^sFrCaNb@mDZ_FFiBC{B]cCoBeGeG{PoEuJiNu]mC_G}C{DwOeNgDiDsCgF{@oCyEcS{CgLcCaH}E_NwGwOmAeDc@uBaA}HiAiGeAoDqCqG_JoQ}FsJkDoHeFmOqBuEyJgO{EiGsZ{\\wBeDoCcGsDiKiDkKq@qDc@{FAw\\KeFq@mGwT_`AoDeKcLqTe`@kt@iH{MsB}DRYb@aET_DLcNAsR`N}@hLUvAKvHjBz@H|CIp@?fCd@"
 	},
@@ -182,7 +182,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "bnb@windwardhouse.com",
 		"phone": "207-236-9656",
-		"website": "windwardhouse.com",
+		"website": "http://windwardhouse.com",
 		"location": "44.212369,-69.064446",
 		"polyline": "gfzlGtcpdLuQkZwEiFmSkU}F_KmAcB{AwAuBoA{IcCsHcDaGaDsH}FoEyC{BkA{P}FmGcC_F{C{DsC}@mA}CeHwDsIoB}C_DmD}CcCwEuBqK_EgPgFyKmF{HqF{GyFkG}EgCuBmBqBqMgOyGcKcF}GeIgIsCiC_GkEoDyB}DaAyCs@aCgAoCiBaG}DwEcC{J{EgCiBkDwCaBgAqE_CcJiFyG}D{O}IgA[cFgAsFK}HDkD^uEH_L{@sOwAoPi@cE[oB_@iCgAcC{AuAyAy@{AiB}EsA}Fe@}EeBqWmAuHiAoEcD{Jw@aCmAaFyA}Gw@mFUgDUiZSsJi@aF_AcEeAoCgCmFcB}B}BoB}IsFeFcD_GkE_JyIcIcIaBqAuDeBqW}FoCu@mB{@kB}AqA{AqAyB{AcEaAqCw@}AqBmCeM}KyGaEcZaPoFwAsEy@aBM}CHwBb@}Bz@_BbAeCdCcBpCcGrMmEhIeT|]mBzBsCjBcCt@{APiCAwEa@cJmA{H{AyO_EaDs@aBGyABwB^sAd@eBbA{@r@uA~A}AlCaLfTcDlFiAvAiDdDuHfFs_@|ViV~OqEtBeCp@iBZsOzAuZxCuEv@iAZ}EbBwDlBgTjM}LtGgCp@sBFyB[_Bq@oCkBeDoC}C{BoCsAiLcDiC[qCJ{@L{@TsD`ByQzIcTnKuB~AwBzBmBjC}AnC{ApDkAzDaAbFkAhHkFn]uAzHoChReBxLgAlGaB|GkBxFqCnGaClEkCvDgD~C}A~AaEvCU^kAf@_H~BkKvBaMfBaDFqDUuBa@eDcByCyBuDgE_CcEcCuGcAgEcAoGkAcHeA}EiFo\\}@oJGsCVoHv@yLbCy[vAsMhCyMtCmK|@iCbKcW~@aEb@gEDeEa@cJcFa|@iFqp@_B{NiBsImEoPwBgLcBsN{@qLi@eGyAkLmAoH{@gDwBwG}DeIwDcEoDuB{SgMcHyCe]{HuPoG_FmA}G{@eCs@eAk@gBkBk@aAw@eCaAwEgAuEmBsDaEmG}@yCa@}CEeB^sFrCaNb@mDZ_FFiBC{B]cCoBeGeG{PoEuJiNu]mC_G}C{DwOeNgDiDsCgF{@oCyEcS{CgLcCaH}E_NwGwOmAeDc@uBaA}HiAiGeAoDqCqG_JoQ}FsJkDoHeFmOqBuEyJgO{EiGsZ{\\wBeDoCcGsDiKiDkKq@qDc@{FAw\\KeFq@mGwT_`AgBsFgAqCcLqTe`@kt@iH{MsB}DRYb@aET_DLcNAsR`N}@hLUvAKvHjBz@H|CIp@?fCd@"
 	},
@@ -193,7 +193,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "stay@comfortinnbelfast.com",
 		"phone": "207-338-2090",
-		"website": "belfastmainehotel.com",
+		"website": "http://belfastmainehotel.com",
 		"location": "44.429230,-68.976894",
 		"polyline": "wqdnGr`_dLaByXOqDYiEo@aJsAaPeBmTi@iGu@qFw@_Eq@sCgA{DeCsJsA{GwAsJo@kGKkAo@eJi@eGyAkLmAoH{@gD_AaDw@uBgAeCuB_EgByBoAiA_BgAoAm@kKqGoGuDoDcBsBu@yFuAkPoD_Du@{CeAsB}@cFqBwBm@iDy@uAUgEe@eAU_Bq@e@WmAkAk@y@Yg@Ys@]qAg@uB_AcFa@sAm@sA_A_B_AyAaAsA_A_B[w@a@aBQeAOwAEy@?uAP_CXwBxAqGdAcGX{DRmD@kBC{@MiAOy@YcA}GyR}@cCaBsDmBaEcAgCeLmYwAeDu@yAiAaBsAyAoFyEgHkGkBeB{@cAoAmBcAyBg@}AmBwH_C}J{CgLcCaHaBsE{BkGqC{GeC{FmAeDc@uB]aCc@{D_@_Ci@iC]qAg@}AkAwCeLiU}FsJ_B}CkAqCcAwCaDuJ_A_Cq@uAoDyFiEmGmBoCkAuAa@c@aL_MgLiMuAiBkAmB_BcDo@_BaAmCe@qAWi@CUo@iBmAgD{AcF[yAUwAWgDKsAAyQ?}ICmCGwASgC]eC_@mB}Pkt@yAeGgBsFgAqCaBiD_Q}[qa@qv@sB}DRYb@aEPkBBs@DmBFuJAoM?cDrBQlJk@~HGhBMvAKvHjBz@HlBCn@Ep@?fCd@"
 	},
@@ -204,7 +204,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "bernadette.whitcomb@fourpointsbangor.com",
 		"phone": "207-947-6721",
-		"website": "fourpointsbangorairport.com",
+		"website": "http://fourpointsbangorairport.com",
 		"location": "44.809210,-68.813965",
 		"polyline": "qxnpGff_cLiAS_@RwAhB}@Xs@?mN}Fu@a@AQDaBBkBIoBuBmH_@eEX_Fp@cClDeJ`B}Dd@u@fAa@hBKv@@nBE`@@`DbCd@Bt@v@xIbI|@|@tClBrOpJnDd@hFm@vDs@tK}AdB]hD}BrAgAfA_@`AG`AHjA`@x@p@jJfKfBx@~DZbCd@tJtFnHhEpAt@VPFmAnAyWd@mJdBq\\TgLc@uNyEq{@OcFHwFt@oHvBeIfFaQxCwMl@cEjAmMf@qFb@gBFYVu@v@_AbAQv@Xf@t@TnACvAmAdEYt@zAvAx@f@jBxAjNnKdQ`LzBdA~FnB`JfCxAZ`Ji@bAAf@b@rArE~CpFdBdCzAj@~ADjHA`APlFbCjCpBnAdBzBtEdDlG~EtGrG`GxFtE`FfEjBrBfDnGzFxS|J~XhDfIrE~IbDbEhChBpAd@dJxBzB|@vBpAzJlJ|BxCtAtDjBfKhAjGb@pA~FxJvGpK|BbC|FtDfHrFdEdFdGhIpD`ErE~DlBx@zETbY}ArE_A~C}@rEo@rGRvFl@~Bh@jHpAbIj@`ESzFmA|GcB~FiBze@uPtLkEjKmDtMgFvBiBbAcB|BaHjD{JzC_GvDeFjD_DrCoBdEgBrFmA|BOxDJnI^bCIjEe@bHkA`CgAzAiA|GmF~F}C|C{BdIgK|EcEtDgCzDsA~Da@~Ql@fD`@|CjAjJdFbCpB`CrC~AdCtDbJvGxQjCbE~QhPnA|@jFfCpIfF|ErDrCvEzDhHtEtE~LzLfEnDdD|@rDR~KbApPlCnH~AzYlQtLzGjKdIdAp@rDnAxCt@|BJdAEvCs@xFwAfLq@hOcBbDw@~D}AbBiAhAmAfDqFbGcK~AcBtJ{FfOaIb`@oZpUkQxX}JtL_GpEiCpBmBrGmHjCaCxCkB~EsB`D}@tCKrDRxFCfDc@dEkAdN{ErDe@xLm@rAUpCsA~DyExB}CxEaD|BuAlAsAzJ_TpFuL~AoDn@}BfBuNx@eIPkOXiHjDl@vEfBpFbDbF~BvMvE|_@dMxAt@bA~AZnB?dBa@bIkDvQuIjc@A|Bl@hC`@n@z@f@v@LjAMdBOrAHpBn@nD|ArB|AvB`CvBnBfBbA~Ah@xCZlHg@xGm@pRsBzDWdDChE\\dHpArEf@nECnTqB|YaCfH?lPpArHr@vFhApGfCjGfE`KtIvBvAlCdAvDz@|DR`Oc@~Sk@hF\\jFxA`EzB`EnDvCbEbAfBRYb@aEZmGDeY?cDrBQlJk@hLUvAKvHjBz@H|CIxDd@"
 	},
@@ -215,7 +215,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "glenmoorbythesea@yahoo.com",
 		"phone": "207-236-7905",
-		"website": "glenmoorbythesea.com",
+		"website": "http://glenmoorbythesea.com",
 		"location": "44.259155,-69.023185",
 		"polyline": "wjcmG~ahdL}I{I}CiCeGkEqBeAiEaAoDcAgCwAgD{BkG}DcFeCeHiDmIyG{I{EeJkFcT_MmAk@iAYqDy@_AMmAEcG@{EHcE^gE?gPuAiD_@qHe@aPi@gCY}A_@gCkAuCsBqAkBg@iAcAmC}@_Ds@uD_@sEiAmR_@sDkA}GwAkFoDoKkCsKmAkGa@eDSyDIiJKoRWcGo@aF_AmDgBoEiBkDkB{BeCkBcLgHwFuD_FeE_M}LaD_D_BkA_By@cCu@mVmFeCu@iB_AoBgBoA}AeBmDoA{DcAaCu@qAmB{BmM_LgOuImP_J{Ak@_H}AqDg@k@AcBBkAJoBd@iChAqA~@{@x@{AlBwBdEkFjLaFvIiSp\\uBvBwA|@qAj@yBb@aAF}CG}I}@cHgAyGyA}OcEcBWcBEyAFwBb@}Al@uA~@y@p@_BvBqPf[_B`CiCvC{BnBe_@tV_MhIcSnMkFvBeFx@uXlC}RrBeG|AiEbBkZdQ{KzF}B`@yB@mB_@aBu@wCwBwCcCoDeCaDsAwKwCy@KyAEwBLiCp@ec@xSmEzB_B`AqB`BkBvBmBpCuAfCgBvEcAlDaApFyBnNsDtUmC|PqArJ{CtRu@jDuAjFkBlFaDdHuBlDeA|A}@z@qFvFaEvCKX[NiBt@iBp@uGfByIzAwEr@{Db@}C?}CW}@QqAk@{C_B{CgCeBoBgA_BmBsDeAeCwA}E{B}Mg@uCOe@uD{TyB_OSwAKsAUeDE{CTaH`AyMdCc\\r@uGz@eGxC}MvBiH|AgEvFgNbBqE|@kEZcEBiEkEou@gAcSaBgSuCk^]{C_A_G{BsJ{DkOuB{LmAkKoAaQ{@iIwAoJoAkGc@aBkAmD_A_CeCgFaBwBuCiC{EoC_O{IeDeBqCmAeD_AiNyCwGwAcCs@aIcDwE_BcFmAgH}@oBq@oBwAu@aAo@oAu@sCqAoG_A{CcCeEwAuBkAyBy@_D_@}C?{AHgBZmC\\gB~AiH^qB\\{DZ}GMmC_@qBqFyOuC}HaF_LiNu]gA{BeAgB{@gAyAuA{PgOoB{BkBgDa@eA{@sCcHsYsBaHcC{G}EsMgH}P_AkEiAaJ_AqEsAkEqHqOoGsLwEaIuCiHcFaOoB{D_M{QwEmF_ToU_CsCsCyEeCeGwAwDeAkDsBcGs@gCo@wEOqCGwB?a\\S_F}@mGgOso@kEcQ_BiEcBwDuO}YsRq^kJiQmHeNRYPyAb@sEFsBBsBBgSBwECcAr@GvHi@tLS`EYxIrBhFGfCd@"
 	},
@@ -226,7 +226,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "info@hartstoneinn.com",
 		"phone": "207-236-4259",
-		"website": "hartstoneinn.com",
+		"website": "http://hartstoneinn.com",
 		"location": "44.208550,-69.066438",
 		"polyline": "inylG~opdLeF_Hw@YuIRo@@]QeHeLkImNoAcBqJmKaLeMaBeC{FuJiAiA{B_BeBo@yF{AsFwBiHqD}FoEyEmD}BqAmEoBmSaHuFaDaFiDu@}@sBcEsEyKuBsDsCgDaDqCoCyAyJwDaE{A}KiDuBu@iHmDaIcFkQwNaEkDkMqNsPiV}M{M}EqDkEyCeCy@{Dy@aDmAwBqAkK}GiLuFsD{BsD_DoD}B{MoHcRsKiFyCcA]wEeAaBQiM?gCXyETkLs@qKgAiPw@cJ_@aCa@gBo@mC{AqAcAqAkBkBwEyAuFi@qEq@iLq@iJaAeHgA_FcBoFcDyJoDyPm@}FMyFWo]a@yE}@{E}@mC}BiFeBoCwBuBeVsO_FeEuEsE}I_JuAkAwCcBcCu@_SiEqEiA}Ao@iBuA_BaBiAgBeBgEmBiFsB}CoLkKcDcC_^uRaEqAkJ_BoC@gC\\_Cv@_B|@kB`BiCpDkFhLoDdH}M|TgHhLw@|@uCvBqAj@yBb@qCHkLgAgLoBmOyDcFkAqAKaB?qBT{Ab@qBdAaCzB{A|BeKxRcFvIqEzE_Z`Sqc@zYoFtCgC~@sB`@mMtAqYnCeGr@aDr@_DbAqEpBiPpJmQ|JuC`AiBNeCSaBi@{BwAcJgHmBcAqKcD_Dm@yAEyAHw@Hu@ReC`AuPfIqUbLaDxByAvAiCbDaDdGcBdFcAjE_I`h@{C`RmFh^}A~GcBrFkCrG_CrEgCzDoHrHaEvCKX[NsEfBuGfBcEv@qDh@aHdAeDNuDQsB[sDeBaC}AyD_EkCgEoBqEwA}Ew@kEkBgL}@aEuGwb@g@gIPcHZ{F`BuT`CmXhCgOjCeK`H}QfDgIpA}Eb@aDNoEMaG{Bo_@aBgZeB_VwEoj@kBqKuDoNeD{OgBcNm@{Hm@kI{@iIwAoJoAkGoBoGeEgJuCmDsDiCiSuLwHsDkM}C{MsCwHkCsHwCwEoAiDi@{De@_AYqAo@qBiB{AcDgCsLwAeDiDeFkAyBe@sAe@wCM_C@uAn@}FpBaJl@_Ef@wI?yBU{BaAkD}GuR_E_JiJkUeHyPaCoD}UgTsCyEiAcDuBsIaEuPsBaHkF{NcGeOyCkHe@iBy@eGaAwGiAqEyCmHiEuIoGsLwEaIaAyB_FqNeCuG_IcMwG_JkSyT_IkJqDiHuB{FyEkNiA}Ei@sGEoZIyGe@uFmCeMsOqp@uAgF_BiEuCiGoS_`@ab@mw@RYPyAb@sEJgFF_ZCcAr@GvHi@tLS`EYxIrBfCA`BEfCd@"
 	},
@@ -237,7 +237,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "marcia@homeporthistoricinn.com",
 		"phone": "207-548-2259",
-		"website": "homeporthistoricinn.com",
+		"website": "http://homeporthistoricinn.com",
 		"location": "44.458320,-68.915258",
 		"polyline": "igjnGd_scLmGqQ{@sBcCkF}AsDkGwO}E}LgA{BeAgB{@gAyAuA}HaH}FeFgAiAg@q@}@wAm@oAa@eAg@}AuBsIaEuPsBaHkF{NuBsFmCqGyCkHe@iBYaB_@cDi@}DWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FuAaBkSyTuCaDyAcBoAeBiBcDgAeCuB{F_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCiB}HsOqp@uAgF_BiEcBwDq@qAoS_`@uRu^kNwWRYPyAb@sEJgFDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	},
@@ -248,7 +248,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "info@sunrisepoint.com",
 		"phone": "207-236-7716",
-		"website": "sunrisepoint.com",
+		"website": "http://sunrisepoint.com",
 		"location": "44.258831,-69.018008",
 		"polyline": "uhcmGpagdLkCxIaAfCsChGwBoB}EqDkEyCeCy@{Dy@aDmAwBqAkK}GiLuFsD{BsD_DoD}B{MoHcRsKiFyCcA]wEeAaBQiM?gCXyETkBE_Im@qKgAqHe@wFQcJ_@aCa@gBo@mC{AqAcAqAkBkBwEyAuFi@qEq@iLq@iJaAeHgA_FcBoFcDyJoDyPm@}FMyFWo]a@yE}@{E}@mC}BiFeBoCwBuBeVsO_FeEuEsE}I_JuAkAwCcBcCu@_SiEqEiA}Ao@iBuA_BaBiAgBeBgEmBiFsB}CoLkKcDcC_^uRaEqAyDw@qDg@oC@gC\\_Cv@_B|@kB`B{AlBm@bAkFhLoDdH}M|TgHhLw@|@uCvBqAj@yBb@qCHkLgAgLoBmOyDcFkAqAKaB?qBT{Ab@qBdAaCzB{A|BeKxRcCtE_B`CiCvCgAbAiFrDuRlMqc@zYoFtCgC~@sB`@mMtAqYnCeGr@aDr@_DbAqEpBiPpJmQ|JkAh@iAViBNeCSaBi@{BwAcJgHmBcAqKcD_Dm@yAEyAHw@Hu@ReC`AuPfIqUbLaDxByAvAiCbDoArBqApCcBdFcAjE_I`h@{C`RqArJ{CtR}A~GcBrFkCrG_CrEgCzD}@z@qFvFaEvCKX[NsEfBuGfBcEv@qDh@aHdAeDNuDQsB[sDeBaC}AyD_EkCgEoBqEwA}Ew@kEkBgL}@aEiFe\\k@qE]oEIwBPcHZ{F`BuT`CmXz@eGlAaGjCeKpAyDnEcLfDgIpA}Eb@aDNoEMaG{Bo_@aBgZeB_VwEoj@kBqKuDoNuA}FoA}GgBcNm@{Hm@kI{@iIwAoJoAkGoBoGeEgJuCmDaBsAqAu@iSuLeDeBqCmAkM}C{MsCcCs@sDwAsHwCwEoAiDi@{De@_AYqAo@qBiBe@u@u@mBgCsLwAeDiDeFkAyBe@sAe@wCM_C@uAn@}FpBaJl@_Ef@wI?yBU{BaAkD}GuR_E_JiJkUeHyPaCoD}UgTg@q@kBgDiAcDuBsIaEuPsBaHkF{NcGeOyCkHe@iBy@eGaAwGiAqEq@qBgB{DiEuIoGsLwEaIaAyB_FqNeCuG_IcMwG_JkSyToFeGoAeBiBcDgAeCuB{FyEkNiA}Ei@sGGwB@wVIyGe@uFmCeMsOqp@uAgF_BiEuCiGoS_`@ab@mw@RYPyAb@sEJgFF_ZCcAr@GvHi@tLS`EYxIrBfCA`BEfCd@"
 	},
@@ -259,7 +259,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "info@lordcamdeninn.com",
 		"phone": "207-236-4325",
-		"website": "lordcamdeninn.com",
+		"website": "http://lordcamdeninn.com",
 		"location": "44.210100,-69.064848",
 		"polyline": "cxylGffpdLyHPo@@]QeHeLkImNoAcBqJmKaLeMaBeC{FuJiAiA{B_BeBo@yF{AsFwBiHqD}FoEyEmD}BqAmEoBmSaHuFaDaFiDu@}@sBcEsEyKuBsDsCgDaDqCoCyAyJwDaE{A}KiDuBu@iHmDaIcFkQwNaEkDkMqNsPiV}M{M}EqDkEyCeCy@{Dy@aDmAwBqAkK}GiLuFsD{BsD_DoD}B{MoHcRsKiFyCcA]wEeAaBQiM?gCXyETkLs@qKgAiPw@cJ_@aCa@gBo@mC{AqAcAqAkBkBwEyAuFi@qEq@iLq@iJaAeHgA_FcBoFcDyJoDyPm@}FMyFWo]a@yE}@{E}@mC}BiFeBoCwBuBeVsO_FeEuEsE}I_JuAkAwCcBcCu@_SiEqEiA}Ao@iBuA_BaBiAgBeBgEmBiFsB}CoLkKcDcC_^uRaEqAkJ_BoC@gC\\_Cv@_B|@kB`BiCpDkFhLoDdH}M|TgHhLw@|@uCvBqAj@yBb@qCHkLgAgLoBmOyDcFkAqAKaB?qBT{Ab@qBdAaCzB{A|BeKxRcFvIqEzE_Z`Sqc@zYoFtCgC~@sB`@mMtAqYnCeGr@aDr@_DbAqEpBiPpJmQ|JuC`AiBNeCSaBi@{BwAcJgHmBcAqKcD_Dm@yAEyAHw@Hu@ReC`AuPfIqUbLaDxByAvAiCbDaDdGcBdFcAjE_I`h@{C`RmFh^}A~GcBrFkCrG_CrEgCzDoHrHaEvCKX[NsEfBuGfBcEv@qDh@aHdAeDNuDQsB[sDeBaC}AyD_EkCgEoBqEwA}Ew@kEkBgL}@aEuGwb@g@gIPcHZ{F`BuT`CmXhCgOjCeK`H}QfDgIpA}Eb@aDNoEMaG{Bo_@aBgZeB_VwEoj@kBqKuDoNeD{OgBcNm@{Hm@kI{@iIwAoJoAkGoBoGeEgJuCmDsDiCiSuLwHsDkM}C{MsCwHkCsHwCwEoAiDi@{De@_AYqAo@qBiB{AcDgCsLwAeDiDeFkAyBe@sAe@wCM_C@uAn@}FpBaJl@_Ef@wI?yBU{BaAkD}GuR_E_JiJkUeHyPaCoD}UgTsCyEiAcDuBsIaEuPsBaHkF{NcGeOyCkHe@iBy@eGaAwGiAqEyCmHiEuIoGsLwEaIaAyB_FqNeCuG_IcMwG_JkSyT_IkJqDiHuB{FyEkNiA}Ei@sGEoZIyGe@uFmCeMsOqp@uAgF_BiEuCiGoS_`@ab@mw@RYPyAb@sEJgFF_ZCcAr@GvHi@tLS`EYxIrBfCA`BEfCd@"
 	},
@@ -270,7 +270,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "stay@seascapemotel.com",
 		"phone": "207-338-2130",
-		"website": "seascapemotel.com",
+		"website": "http://seascapemotel.com",
 		"location": "44.430148,-68.969745",
 		"polyline": "awdnGxs}cLgFeo@]{C_A_Gk@qCoAaFeBmGuA}FoA}Ge@}CaAeIKeAoAaQ{@iIwAoJg@wCg@sBc@aBkAmD_A_CeCgFaBwBs@u@aBsAqAu@q@[wA}@_O{IcAm@aBw@qCmAeD_AiNyCwGwAcCs@sDwAmCkAeDkAq@SeD{@}@QkBWsCYg@K_AYo@Wa@WmA_Au@aAo@oAY{@[wAi@{Bg@sCYkAe@oAq@uAqAoBwAuBkAyBe@sASkAQkAMqA?{AHgBZmC\\gB`A_E\\iB^qBLmANmBT{DDaBCeAIgA_@qBm@mBcEkLyAiE{@sBcCkF}AsDiNu]gA{BeAgB{@gAyAuA{PgOgAiAg@q@}@wAm@oAa@eA{@sCcHsYsBaHcC{GgB_FuBsFmCqGyCkHe@iBYaBiAaJWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FwEmF_ToU_CsCi@u@iBcDgAeC}@_Cw@{B_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCgOso@uB{IuAgF_BiEcBwDuO}Y_^{p@mHeNRYPyAb@sEFsBBsBDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	},
@@ -281,7 +281,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "info@jeweledturret.com",
 		"phone": "207-338-2304",
-		"website": "jeweledturret.com",
+		"website": "http://jeweledturret.com",
 		"location": "44.423940,-69.004127",
 		"polyline": "wpcnG~jddLsBoCaBtDi@`AgAnCWr@Ut@_AdDyC`MaA~DsCjFsBzDmAdB}@~@qE|DaEpDgA`ASa@s@iBo@}AUOQcAEWIMm@{CgC_PaBeKWyBSwA@KMgAQ{BCi@E{CPuEDs@AWVoDh@iHdCc\\r@uGz@eGlAaGjA{E~@iDv@_C|AgEvFgNz@uBf@{Ah@aCRiANwAJkBBcB?eBM{Cs@gLgAgRaAcP_@cIg@_IaBgSuCk^]{C_A_Gk@qCoAaFeBmGuA}FoA}Ge@}CaAeIKeAoAaQ{@iIwAoJg@wCg@sBc@aBkAmD_A_CeCgFaBwBs@u@aBsAqAu@q@[wA}@_O{IcAm@aBw@qCmAeD_AiNyCwGwAcCs@sDwAmCkAeDkAq@SeD{@}@QkBWsCYg@K_AYo@Wa@WmA_Au@aAo@oAY{@[wAi@{Bg@sCYkAe@oAq@uAqAoBwAuBkAyBe@sASkAQkAMqA?{AHgBZmC\\gB`A_E\\iB^qBLmANmBT{DDaBCeAIgA_@qBm@mBcEkLyAiE{@sBcCkF}AsDiNu]gA{BeAgB{@gAyAuA{PgOgAiAg@q@}@wAm@oAa@eA{@sCcHsYsBaHcC{GgB_FuBsFmCqGyCkHe@iBYaBiAaJWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FwEmF_ToU_CsCi@u@iBcDgAeC}@_Cw@{B_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCgOso@uB{IuAgF_BiEcBwDuO}Y_^{p@mHeNRYPyAb@sEFsBBsBDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	},
@@ -292,7 +292,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "reservations@whitehall-inn.com",
 		"phone": "207-236-3391",
-		"website": "whitehall-inn.com",
+		"website": "http://whitehall-inn.com",
 		"location": "44.216552,-69.058804",
 		"polyline": "i`{lGh`odLyRuT}F_KmAcB{AwAuBoA{IcCsHcDaGaDsH}FoEyC{BkA{P}FmGcC_F{C{DsC}@mA}CeHwDsIoB}C_DmD}CcCwEuBqK_EgPgFyKmF{HqF{GyFkG}EgCuBmBqBqMgOyGcKcF}GeIgIsCiC_GkEoDyB}DaAyCs@aCgAoCiBaG}DwEcC{J{EgCiBkDwCaBgAqE_CcJiFyG}D{O}IgA[cFgAsFK}HDkD^uEH_L{@sOwAoPi@cE[oB_@iCgAcC{AuAyAy@{AiB}EsA}Fe@}EeBqWmAuHiAoEcD{Jw@aCmAaFyA}Gw@mFUgDUiZSsJi@aF_AcEeAoCgCmFcB}B}BoB}IsFeFcD_GkE_JyIcIcIaBqAuDeBqW}FoCu@mB{@kB}AqA{AqAyB{AcEaAqCw@}AqBmCeM}KyGaEcZaPoFwAsEy@aBM}CHwBb@}Bz@_BbAeCdCcBpCcGrMmEhIeT|]mBzBsCjBcCt@{APiCAwEa@cJmA{H{AyO_EaDs@aBGyABwB^sAd@eBbA{@r@uA~A}AlCaLfTcDlFiAvAiDdDuHfFs_@|ViV~OqEtBeCp@iBZsOzAuZxCuEv@iAZ}EbBwDlBgTjM}LtGgCp@sBFyB[_Bq@oCkBeDoC}C{BoCsAiLcDiC[qCJ{@L{@TsD`ByQzIcTnKuB~AwBzBmBjC}AnC{ApDkAzDaAbFkAhHkFn]uAzHoChReBxLgAlGaB|GkBxFqCnGaClEkCvDgD~C}A~AaEvCU^kAf@_H~BkKvBaMfBaDFqDUuBa@eDcByCyBuDgE_CcEcCuGcAgEcAoGkAcHeA}EiFo\\}@oJGsCVoHv@yLbCy[vAsMhCyMtCmK|@iCbKcW~@aEb@gEDeEa@cJcFa|@iFqp@_B{NiBsImEoPwBgLcBsN{@qLi@eGyAkLmAoH{@gDwBwG}DeIwDcEoDuB{SgMcHyCe]{HuPoG_FmA}G{@eCs@eAk@gBkBk@aAw@eCaAwEgAuEmBsDaEmG}@yCa@}CEeB^sFrCaNb@mDZ_FFiBC{B]cCoBeGeG{PoEuJiNu]mC_G}C{DwOeNgDiDsCgF{@oCyEcS{CgLcCaH}E_NwGwOmAeDc@uBaA}HiAiGeAoDqCqG_JoQ}FsJkDoHeFmOqBuEyJgO{EiGsZ{\\wBeDoCcGsDiKiDkKq@qDc@{FAw\\KeFq@mGwT_`AgBsFgAqCcLqTe`@kt@iH{MsB}DRYb@aET_DLcNAsR`N}@hLUvAKvHjBz@H|CIp@?fCd@"
 	},
@@ -303,7 +303,7 @@ module.exports = [
 		"sleeps": 0,
 		"email": "theskipper@yankeeclippermotelbelfast.com",
 		"phone": "207-338-2353",
-		"website": "yankeeclippermotelbelfast.com",
+		"website": "http://yankeeclippermotelbelfast.com",
 		"location": "44.433475,-68.997917",
 		"polyline": "glenG~ccdLn@cIr@uGz@eGlAaGjA{E~@iDpAyDbAmCjCuGfDgIf@{Ah@aCRiANwAJkBBcB?eBM{Cs@gLgAgRaAcP_@cIg@_I}@_L_B_SyAsQ]{C_A_Gk@qCoAaFeBmGuA}FoA}Ge@}CaAeIm@{Hm@kI{@iIwAoJg@wCg@sBc@aBkAmD_A_CeCgFaBwBs@u@aBsAqAu@q@[wA}@_O{IcAm@aBw@qCmAeD_AeH}A{MsCcCs@sDwAmCkAeDkAwEoA}@QkBWsCYg@K_AYqAo@mA_Ac@i@e@u@[q@Y{@eAsEg@sCYkAe@oAq@uAiDeFkAyBe@sAe@wCMqA?m@@uAVwCVeBPw@`A_E\\iB^qBLmAZ_FJwBBs@CeAIgAKs@S}@m@mB}GuR{@sBcCkF}AsDkGwO}E}LgA{BeAgB{@gAyAuA}HaH}FeFgAiAg@q@}@wAm@oAa@eAg@}AuBsIaEuPsBaHkF{NuBsFmCqGyCkHe@iBYaB_@cDi@}DWyAg@wBa@yAq@qBgB{DiEuIgDyGgByCuCyEaAgBaAyBsAoDkCaIwA_Em@uAaAeB}F}IaE}FuAaBkSyTuCaDyAcBoAeBiBcDgAeCuB{F_@{@G_@}@kCsBcGs@gCUuAYaCOqCEWA_B@wVAiDGoBKoBYeCc@gCiB}HsOqp@uAgF_BiEcBwDq@qAoS_`@uRu^kNwWRYPyAb@sEJgFDoHAwIBwECcAr@GvHi@tBK~HG`EYvHjB`@FfCA`BEfCd@"
 	}
