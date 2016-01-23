@@ -1,0 +1,62 @@
+.guest {
+	.container {
+		margin-top: 14px;
+		position: relative;
+
+		.cover {
+			display: none;
+		    position: absolute;
+		    width: 100%;
+		    z-index: 999999;
+		    height: 40px;
+		    top: -10px;
+		}
+
+		&.disabled {
+			opacity: 0.4;
+			.cover {
+				display: block;
+			}
+		}
+	}
+
+	.attendance-container {
+		margin-bottom: 36px;
+	}
+
+	.yes {
+		&.selected {
+			color: white;
+			background: @green;
+		}
+	}
+
+	.no {
+		&.selected {
+			color: white;
+			background: @light-red;
+		}
+	}
+
+	a {
+		float: right;
+	    padding: 8px;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    border: 1px solid #CCC;
+	    color: #888;
+	    position: relative;
+	    top: -8px;
+	    margin: 0 4px;
+	    min-width: 40px;
+	    text-align: center;
+
+	    &:hover {
+	    	background: #EFEFEF;
+	    }
+
+	    &.meal.selected {
+	    	background: #CCC;
+	    }
+	}
+}

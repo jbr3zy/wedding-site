@@ -2,7 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Emily &amp; Justin</title>
-    <link rel="icon" href="public/img/favicon.png">
+    <link rel="icon" href="/public/img/favicon.png">
     <style type="text/css">
       body {
         margin: 0;
@@ -310,13 +310,33 @@
       </div>
     </script>
 
-   <script id="rsvpTemplate" type="template">
+  <script id="guestCardTemplate" type="template">
     <div class="title">
-      <div class="card-title">Coming soon!</div>
+      <input class="card-title name" type="text" />
+      <label class="name-label">
+        Guest 1
+      </label>
     </div>
-    <div>
-      We&apos;ll be sending an invitation via email soon! You&apos;ll be able to RSVP here.
+    <div class="guest">
+      <div class="attendance-container container disabled">
+        <div class="cover"></div>
+        <span>Attending?</span>
+        <a data-value="2" class="attendance no">Can&apos;t make it</a>
+        <a data-value="1" class="attendance yes">You bet!</a>
+      </div>
+      <div class="meal-container container disabled">
+        <div class="cover"></div>
+        <span>Meal preference</span>
+        <a data-value="2" class="meal">Vegetarian</a>
+        <a data-value="1" class="meal">Chicken</a>
+        <a data-value="0" class="meal">Lobster</a>
+      </div>
     </div>
+  </script>
+
+   <script id="rsvpTemplate" type="template">
+      <div id="firstHolder">
+      </div>
    </script>
 
    <script id="detailsTemplate" type="template">
@@ -390,7 +410,7 @@ You will find car rentals available at all four airports.</p>
       (function(d, t) {
         var g = d.createElement(t),
             s = d.getElementsByTagName(t)[0];
-        g.src = 'public/js/main.min.js';
+        g.src = '/public/js/main.js';
         g.async = 1;
         s.parentNode.insertBefore(g, s);
       }(document, 'script'));

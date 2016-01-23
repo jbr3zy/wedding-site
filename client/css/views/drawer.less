@@ -64,6 +64,16 @@
     overflow-x: hidden;
     font-size: 14px;
 
+    input {
+        font-family: armata;
+        border: 0;
+        width: 100%;
+
+        &:focus {
+        	outline: none;
+        }
+    }
+
     &.no-title {
     	padding-top: 14px;
     }
@@ -79,6 +89,16 @@
 	    padding: 14px;
 	    border-bottom: 1px solid #CCC;
 	    font-size: 17px;
+
+	    .name-label {
+	        position: absolute;
+		    top: 16px;
+		    left: 14px;
+		    z-index: 0;
+		    opacity: 0.4;
+		    cursor: text;
+		    width: 100%;
+	    }
 	}
 
 	.card-title {

@@ -2,6 +2,7 @@ var Marionette = require('backbone.marionette');
 var animate = require('velocity-commonjs');
 
 var DirectionsView = require('./directions');
+var RsvpView = require('./guests');
 
 var Radio = require('backbone.radio');
 var $ = require('jquery');
@@ -75,11 +76,6 @@ var DrawerView = Marionette.LayoutView.extend({
     	/// debugger;
     	this.openDrawer();
     }
-});
-
-var RsvpView = Marionette.ItemView.extend({
-	template: "#rsvpTemplate",
-	className: "card"
 });
 
 var DetailsView = Marionette.ItemView.extend({

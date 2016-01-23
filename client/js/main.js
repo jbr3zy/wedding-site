@@ -2,6 +2,7 @@ var App = require('./app');
 var loadCSS = require('./utils/load-css');
 var onloadCSS = require('./utils/onload-css');
 var photos = require('./data');
+var Cookies = require('js-cookie');
 
 var _ = require('underscore');
 var $ = require('jquery');
@@ -18,7 +19,7 @@ var imageSource = window.pswpItems[0].src;
 
 var reqCount = 0;
 function checkReqs() {
-	if (reqCount > 0) {
+	if (reqCount > 1) {
 		$('.photo1').css('background-image', 'url(' + imageSource + ')');
 		clearTimeout(window.loaderTimer);
 		$('.loader').fadeOut();
@@ -33,7 +34,7 @@ window.loaderTimer = setTimeout(function() {
 }, 450);
 
 // Get those styles in there
-var styles = loadCSS('public/css/styles.min.css');
+var styles = loadCSS('/public/css/styles.min.css');
 onloadCSS(styles, function() {
 	checkReqs();
 });
@@ -55,3 +56,36 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-71949722-1', 'auto');
 ga('send', 'pageview');
+
+var data = {'code': 'y64b39', 'guests': [1,2,3]}
+
+var code = window.location.pathname.replace(/\//g, '');
+if (!code) {
+	code = Cookies.get('code')
+}
+
+if (code) {
+	$.ajax({
+	  type: "GET",
+	  url: "/api/rsvp?code=" + code,
+	  timeout: 3000
+	}).done(function(response) {
+	  window.guestData = response;
+	  Cookies.set('code', response.code);
+	}).always(function() {
+      checkReqs();
+  	});
+}
+
+
+
+
+// $.ajax({
+//   type: "POST",
+//   url: "/api/rsvp",
+//   data: JSON.stringify(data),
+//   dataType: "json",
+//   contentType: "application/json"
+// }).done(function(response) {
+//   console.log(response);
+// });

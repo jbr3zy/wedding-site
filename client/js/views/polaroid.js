@@ -11,7 +11,6 @@ var Gallery = require('./gallery');
 var PRELOAD_FACTOR = 2;
 
 var PolaroidView = Marionette.ItemView.extend({
-	src: "http://assets.nydailynews.com/polopoly_fs/1.1245686!/img/httpImage/image.jpg_gen/derivatives/article_970/afp-cute-puppy.jpg",
 	dataChannel: Radio.channel('drawer'),
 	animating: false,
 	photoStore: [],
@@ -52,9 +51,6 @@ var PolaroidView = Marionette.ItemView.extend({
 	render: function() {
 		var self = this;
 		self.bindUIElements();
-
-		var photo = new Photo({src: self.src});
-		photo.on("change:loaded", self.setImage);
 
 		Ripple.init(self.ui.next[0], 0.40);
 
