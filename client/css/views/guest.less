@@ -8,7 +8,7 @@
 		    position: absolute;
 		    width: 100%;
 		    z-index: 999999;
-		    height: 40px;
+		    height: 60px;
 		    top: -10px;
 		}
 
@@ -34,7 +34,50 @@
 	.no {
 		&.selected {
 			color: white;
-			background: @light-red;
+			background: @blue;
+		}
+	}
+
+	.food-choice {
+		height: 40px;
+		width: 50px;
+		display: inline-block;
+		float: right;
+		margin-left: 26px;
+		margin-right: 4px;
+    	margin-top: -4px;
+    	cursor: pointer;
+	    background-position: 50% 50%;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    opacity: 0.8;
+
+	    &.carrot {
+	    	background-image: url(/public/img/carrot.png);
+	    	&.selected {
+	    		background-image: url(/public/img/carrot-selected.png);
+	    	}
+	    }
+	    &.lobster {
+	    	background-image: url(/public/img/lobster.png);
+	    	&.selected {
+	    		background-image: url(/public/img/lobster-selected.png);
+	    	}
+	    }
+	   	&.chicken {
+	    	background-image: url(/public/img/chicken.png);
+	    	&.selected {
+	    		background-image: url(/public/img/chicken-selected.png);
+	    	}
+	    }
+
+    	&:hover,
+    	&.selected {
+    		opacity: 1.0;
+    	}
+
+		img {
+			height: 100%;
 		}
 	}
 

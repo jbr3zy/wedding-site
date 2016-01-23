@@ -56,6 +56,7 @@ var GuestItemView = Marionette.ItemView.extend({
                 this.ui.mealContainer.removeClass("disabled");
             } else {
                 this.ui.mealContainer.addClass("disabled");
+                this.ui.meal.removeClass("selected");
             }
         },
         setMeal: function(e) {
@@ -86,8 +87,8 @@ var GuestItemView = Marionette.ItemView.extend({
                 self.ui.label.fadeOut(100);
             });
 
-            self.ui.name.on("keyUp", function() {
-                console.log('hi');
+            self.ui.name.keyup(function() {
+                self.ui.attendanceContainer.removeClass("disabled");
             });
         }
     });
@@ -105,8 +106,13 @@ var RsvpView = Marionette.ItemView.extend({
 	},
     onRender: function() {
     	this.bindUIElements();
-		var guestCollection = new GuestCollection([{"name": "Justin"},{"name1": "Emily"}]);
+
+        var data = window.guestData.guests;
+        var plusOne = {"name":"", "isPlusOne":true};
+        data.push(plusOne);
+		var guestCollection = new GuestCollection(data);
         this.collection = guestCollection;
+
 		var view = new GuestCollectionView({collection: guestCollection});
     	this.ui.holder.html(view.render().el);
     }
