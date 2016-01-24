@@ -21,7 +21,7 @@ ATTENDANCE = {
 
 
 class Guest(db.Model):
-    name = db.StringProperty(required=True)
+    name = db.StringProperty(default='')
     #party = db.ReferenceProperty(Party,
     #                             collection_name='guests')
     attendance = db.IntegerProperty()
@@ -42,7 +42,7 @@ class Party(db.Model):
     name = db.StringProperty(required=True)
     id = db.IntegerProperty()
     max_guests = db.IntegerProperty()
-    note = db.TextProperty()
+    note = db.TextProperty(default='')
 
     def to_dict(self):
         return {
@@ -55,10 +55,15 @@ class Party(db.Model):
 class RsvpApi(webapp2.RequestHandler):
     err_msg = 'A valid code parameter is required'
 
+    @db.transactional
+    def _save(self, entities):
+        db.put(entities)
+
     def _get_id(self, id=None):
-        if not id and 'code' in self.request.body:
+        data = str(self.request.body)
+        if not id and 'code' in data:
             try:
-                data = json.loads(self.request.body)
+                data = json.loads(str(data))
                 id = data.get('code')
             except ValueError:
                 return None
@@ -86,7 +91,6 @@ class RsvpApi(webapp2.RequestHandler):
 
     def get(self):
         decoded_id = self._get_id()
-        print decoded_id
         if not decoded_id:
             self.response.set_status(400, self.err_msg)
             return
@@ -104,9 +108,10 @@ class RsvpApi(webapp2.RequestHandler):
             party = Party(**p)
             db.put(party)
 
+            entities = []
             for guest in guests:
-                g = Guest(parent=party, **guest)
-                db.put(g)
+                entities.append(Guest(parent=party, **guest))
+            self._save(entities)
 
         self.response.headers['Content-Type'] = 'application/json'
         self.response.out.write(json.dumps(party.to_dict()))
@@ -130,24 +135,53 @@ class RsvpApi(webapp2.RequestHandler):
             ]
         }
         """
-        #print self.request.__dict__
-        #guest = Guest(name=self.request.get('name'))
-        #db.put(guest)
-
-        p = Party(id=1, name="Butler", max_guests=2, note="Hi")
-        db.put(p)
-
-        g = Guest(id=1, name="Justin", party=p)
-        db.put(g)
-
         decoded_id = self._get_id()
         if not decoded_id:
             self.response.set_status(400, self.err_msg)
+            return
 
         party = db.GqlQuery('SELECT * FROM Party WHERE id = :1 LIMIT 1', decoded_id).get()
         if not party:
             self.response.set_status(404)
             return
+
+        try:
+            data = json.loads(self.request.body)
+        except ValueError:
+            self.response.set_status(400)
+            return
+
+        if not 'guests' in data:
+            self.response.set_status(400)
+            return
+
+        if 'note' in data:
+            party.note = data['note']
+
+        extras_allowed = max(0, party.max_guests - Guest.all().ancestor(party).count())
+        entities = []
+
+        for guest in data['guests']:
+            if 'id' in guest:
+                g = Guest.all().ancestor(party).filter('id =', guest['id']).get()
+            elif extras_allowed:
+                extras_allowed -= 1
+                g = Guest(parent=party, id=party.max_guests-extras_allowed, is_plus_one=True)
+
+            if not g:
+                continue
+
+            if 'meal' in guest:
+                g.meal = guest['meal']
+            if 'attendance' in guest:
+                g.attendance = guest['attendance']
+            if 'name' in guest and g.is_plus_one:
+                g.name = guest['name']
+
+            entities.append(g)
+
+        self._save(entities)
+        db.put(party)
 
         self.response.headers['Content-Type'] = 'application/json'
         self.response.out.write(json.dumps(party.to_dict()))

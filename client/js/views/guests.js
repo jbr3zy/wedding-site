@@ -84,7 +84,12 @@ var GuestItemView = Marionette.ItemView.extend({
             }
 
             self.ui.name.on("focus", function() {
-                self.ui.label.fadeOut(100);
+                self.ui.label.fadeOut(200);
+            });
+            self.ui.name.on("focusout", function() {
+                if (!self.ui.name.val()) {
+                    self.ui.label.fadeIn(200);
+                }
             });
 
             self.ui.name.keyup(function() {

@@ -42,7 +42,7 @@ if (code) {
 	$.ajax({
 	  type: "GET",
 	  url: "/api/rsvp?code=" + code,
-	  timeout: 3000
+	  timeout: 4500
 	}).done(function(response) {
 	  window.guestData = response;
 	  Cookies.set('code', response.code);
