@@ -3,9 +3,12 @@ var loadCSS = require('./utils/load-css');
 var onloadCSS = require('./utils/onload-css');
 var photos = require('./data');
 var Cookies = require('js-cookie');
+var Radio = require('backbone.radio');
 
 var _ = require('underscore');
 var $ = require('jquery');
+
+window.dataChannel = Radio.channel('dataChannel');
 
 var options = {
   something: "some value1",
@@ -19,13 +22,13 @@ var imageSource = window.pswpItems[0].src;
 
 var reqCount = 0;
 function checkReqs() {
-	if (reqCount > 1) {
+	reqCount += 1;
+
+	if (reqCount == 3) {
 		$('.photo1').css('background-image', 'url(' + imageSource + ')');
 		clearTimeout(window.loaderTimer);
 		$('.loader').fadeOut();
 		myapp.start();
-	} else {
-		reqCount += 1;
 	}
 }
 
@@ -36,19 +39,27 @@ window.loaderTimer = setTimeout(function() {
 var code = window.location.pathname.replace(/\//g, '');
 if (!code) {
 	code = Cookies.get('code')
+} else {
+	window.openRsvp = true;
 }
 
 if (code) {
+	window.rsvpCode = code;
+	window.longAjax = setTimeout(function() {
+   		checkReqs();  // Allow start for long-running AJAX
+	}, 3500);
+
 	$.ajax({
 	  type: "GET",
 	  url: "/api/rsvp?code=" + code,
-	  timeout: 4500
+	  timeout: 12000
 	}).done(function(response) {
 	  window.guestData = response;
 	  Cookies.set('code', response.code);
-	}).always(function() {
-      checkReqs();
-  	});
+	  clearTimeout(window.longAjax);
+	  window.dataChannel.trigger('dataLoaded');
+	  checkReqs();
+	});
 } else {
 	checkReqs();
 }

@@ -321,23 +321,39 @@
       <div class="attendance-container container disabled">
         <div class="cover"></div>
         <span>Attending?</span>
-        <a data-value="2" class="attendance no">Can&apos;t make it</a>
-        <a data-value="1" class="attendance yes">You bet!</a>
+        <div class="attendance-btn">
+          <a data-value="2" class="attendance no">Can&apos;t make it</a>
+        </div>
+        <div class="attendance-btn">
+          <img class="stars" src="http://i784.photobucket.com/albums/yy125/777butterflies/Floaties/Animation3.gif" />
+          <a data-value="1" class="attendance yes">You bet!</a>
+        </div>
       </div>
       <div class="meal-container container disabled">
         <div class="cover"></div>
         <span>Meal preference</span>
-        <div data-value="2" class="food-choice meal carrot"></div>
-        <div data-value="1" class="food-choice meal chicken"></div>
-        <div data-value="0" class="food-choice meal lobster"></div>
+        <div data-value="2" class="food-choice meal meal2 carrot"></div>
+        <div data-value="1" class="food-choice meal meal1 chicken"></div>
+        <div data-value="0" class="food-choice meal meal0 lobster"></div>
       </div>
     </div>
   </script>
 
    <script id="rsvpTemplate" type="template">
+      <div id="rsvp-loading">
+        <img src="/public/images/loading.gif" />
+      </div>
+      <div id="no-invite-msg" class="card">
+        <div class="title">
+          <div class="card-title">Check your inbox!</div>
+        </div>
+        <div>
+          <p>We&apos;ve emailed your invitation. Check your inbox (or spam folder) for the RSVP link!</p>
+        </div>
+      </div>
       <div id="firstHolder">
       </div>
-      <div class="card no-title">
+      <div id="rsvp-notes" class="card no-title">
         <textarea placeholder="Notes / Comments"></textarea>
       </div>
    </script>

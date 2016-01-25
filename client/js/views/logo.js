@@ -25,6 +25,13 @@ var LogoView = Marionette.ItemView.extend({
   	},
   	render: function() {
   		this.bindUIElements();
+
+      if (window.openRsvp) {
+        var self = this;
+        setTimeout(function() {
+          self.openRsvp();
+        }, 550);
+      }
   		return this;
   	},
     openRsvp: function() {

@@ -2,6 +2,7 @@ import webapp2
 import os
 import cgi
 import json
+import time
 from google.appengine.ext import db
 from hashids import Hashids
 from guests import guests as guest_list
@@ -49,7 +50,7 @@ class Party(db.Model):
             'code': hashids.encode(self.id), 
             'maxGuests': self.max_guests,
             'note': self.note,
-            'guests': [x.to_dict() for x in Guest.all().ancestor(self)]
+            'guests': [x.to_dict() for x in Guest.all().ancestor(self).order('id')]
         }
 
 class RsvpApi(webapp2.RequestHandler):
