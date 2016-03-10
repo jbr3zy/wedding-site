@@ -45,6 +45,38 @@
     }
 }
 
+#save-button {
+	font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+
+    .save {
+		padding: 5px 14px;
+		border: 1px solid #FFF;
+		border-radius: 4px;
+		margin-right: 1px;
+
+		&:hover {
+			background: #626D80;
+		}
+
+		&.disabled {
+			color: #65738C;
+			border-color: #65738C;
+			cursor: default;
+
+			&:hover {
+				background: none;
+			}
+		}
+    }
+
+    .saved, .saving {
+    	display: none;
+    }
+}
+
 #drawer-title {
 	text-transform: uppercase;
     width: 200px;
