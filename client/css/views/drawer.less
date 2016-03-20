@@ -49,32 +49,55 @@
 	font-size: 14px;
     text-transform: uppercase;
     float: right;
-    cursor: pointer;
+    text-align: center;
+    position: relative;
 
-    .save {
-		padding: 5px 14px;
-		border: 1px solid #FFF;
-		border-radius: 4px;
-		margin-right: 1px;
+    cursor: pointer;
+	padding: 5px 14px;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	margin-right: 1px;
+	display: none;
+
+	margin-top: -5px;
+	transition: width 450ms;
+	width: 45px;
+
+	&>img {
+		display: none;
+	}
+
+	&.saving {
+	   width: 48px;
+
+	   &>img {
+		    display: inline-block;
+		    position: absolute;
+		    height: 10px;
+		    top: 50%;
+		    margin-top: -5px;
+		    right: 8px;
+	   }
+	}
+
+    &.save {
+    	color: white;
+    	width: 36px;
 
 		&:hover {
-			background: #626D80;
-		}
-
-		&.disabled {
-			color: #65738C;
-			border-color: #65738C;
-			cursor: default;
-
-			&:hover {
-				background: none;
-			}
+			background: #65738C;
 		}
     }
 
-    .saved, .saving {
-    	display: none;
-    }
+	&.saved {
+		color: #65738C;
+		border-color: #65738C;
+		cursor: default;
+
+		&:hover {
+			background: none;
+		}
+	}
 }
 
 #drawer-title {

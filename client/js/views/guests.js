@@ -81,15 +81,18 @@ var GuestItemView = Marionette.ItemView.extend({
             var self = this;
 
             var attendance = self.model.get("attendance");
-            var meal = self.model.get("meal");
+            var meal = self.model.get("meal", null);
 
             if (attendance && attendance == 1) {
                 this.ui.attendanceContainer.find(".yes").addClass("selected");
                 this.ui.mealContainer.removeClass("disabled");
 
-                if (meal && meal >= 0) {
+                if (meal != null && meal >= 0) {
                     this.ui.mealContainer.children(".meal" + meal).addClass("selected");
                 }
+            } else {
+                this.ui.attendanceContainer.find(".no").addClass("selected");
+                this.ui.mealContainer.addClass("disabled");
             }
 
             if (!self.model.get("isPlusOne")) {
@@ -111,11 +114,13 @@ var GuestItemView = Marionette.ItemView.extend({
                 if (!self.ui.name.val()) {
                     self.ui.label.fadeIn(200);
                     self.ui.attendanceContainer.addClass("disabled");
+                    self.ui.mealContainer.addClass("disabled");
                 }
             });
 
             self.ui.name.keyup(function() {
                 self.ui.attendanceContainer.removeClass("disabled");
+                self.model.set("name", self.ui.name.val());
             });
         }
     });
@@ -136,7 +141,20 @@ var RsvpView = Marionette.ItemView.extend({
         notes: "#rsvp-notes"
 	},
     onRender: function() {
+        var self = this;
+
     	this.bindUIElements();
+
+        this.ui.saveBtn = $('#save-button');
+        this.ui.saveBtnTxt = $('#save-button-text');
+        this.ui.saveBtn.on('click', function() {
+            self.save();
+        });
+        this.ui.saveBtn.show();
+
+        this.ui.notes.children("textarea").keyup(function() {
+            self.enableSave();
+        });
 
         if (!window.rsvpCode) {
             this.ui.noCode.show();
@@ -153,6 +171,14 @@ var RsvpView = Marionette.ItemView.extend({
 
         this.resetGuests();
     },
+    enableSave: function() {
+        this.ui.saveBtn.attr('class', 'save');
+        this.ui.saveBtnTxt.html('save');
+    },
+    disableSave: function() {
+        this.ui.saveBtn.attr('class', 'saved');
+        this.ui.saveBtnTxt.html('saved');
+    },
     resetGuests: function() {
         var guestData = window.guestData;
 
@@ -167,6 +193,8 @@ var RsvpView = Marionette.ItemView.extend({
         }
         var guestCollection = new GuestCollection(data);
         this.collection = guestCollection;
+        this.listenTo(this.collection, 'change', this.enableSave);
+
 
         var view = new GuestCollectionView({collection: guestCollection});
         this.ui.holder.html(view.render().el);
@@ -175,6 +203,45 @@ var RsvpView = Marionette.ItemView.extend({
 
         this.ui.loading.hide();
         this.ui.notes.show();
+    },
+    save: function() {
+        var self = this;
+        var buffered = false;
+
+        setTimeout(function() {
+            if (buffered) {
+                self.disableSave();
+            } else {
+                buffered = true;                
+            }
+        }, 1500);
+
+        self.ui.saveBtn.attr('class', 'saving');
+        self.ui.saveBtnTxt.html('saving');
+
+        var data = {'code': window.rsvpCode,
+                    'note': this.ui.notes.children("textarea").val(),
+                    'guests': []};
+        this.collection.forEach(function(guest) {
+            data.guests.push(guest.toDict());
+        });
+
+        $.ajax({
+            type: "POST",
+            url: "/api/rsvp",
+            data: JSON.stringify(data),
+            dataType: "json",
+            contentType: "application/json"
+        }).done(function(response) {
+            console.log(response);
+            window.guestData = response;
+            self.resetGuests();
+            if (buffered) {
+                self.disableSave();
+            } else {
+                buffered = true;
+            }
+        });
     }
 });
 
