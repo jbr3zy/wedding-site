@@ -12,12 +12,12 @@ skip_files:
 - ^(.*/)?\.DS_Store$
 
 handlers:
-- url: /([a-zA-Z0-9]{4,10}/)?
+- url: /dashboard(/all)?/?
+  script: dashboard.application
+- url: /([a-zA-Z0-9]{4,10}/?)?
   static_files: client/index.html
   upload: client/index.html
 - url: /public
   static_dir: client/public
 - url: /api/.*
   script: rsvp.application
-- url: /dashboard/?
-  script: dashboard.application

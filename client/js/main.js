@@ -39,7 +39,7 @@ window.loaderTimer = setTimeout(function() {
 var code = window.location.pathname.replace(/\//g, '');
 if (!code) {
 	code = Cookies.get('code')
-} else {
+} else if (code != Cookies.get('code')) {
 	window.openRsvp = true;
 }
 

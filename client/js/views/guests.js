@@ -82,16 +82,22 @@ var GuestItemView = Marionette.ItemView.extend({
 
             var attendance = self.model.get("attendance");
             var meal = self.model.get("meal", null);
+            var name = self.model.get("name");
 
             if (attendance && attendance == 1) {
                 this.ui.attendanceContainer.find(".yes").addClass("selected");
-                this.ui.mealContainer.removeClass("disabled");
+
+                if (name != "") {
+                    this.ui.mealContainer.removeClass("disabled");
+                }
 
                 if (meal != null && meal >= 0) {
                     this.ui.mealContainer.children(".meal" + meal).addClass("selected");
                 }
             } else {
-                this.ui.attendanceContainer.find(".no").addClass("selected");
+                if (attendance && attendance == 2) {
+                    this.ui.attendanceContainer.find(".no").addClass("selected");
+                }
                 this.ui.mealContainer.addClass("disabled");
             }
 
@@ -100,7 +106,6 @@ var GuestItemView = Marionette.ItemView.extend({
                 self.ui.label.hide();
             }
 
-        	var name = self.model.get("name");
             if (name != "") {
                 self.ui.name.attr("value", name);
                 self.ui.label.hide();
@@ -120,6 +125,10 @@ var GuestItemView = Marionette.ItemView.extend({
 
             self.ui.name.keyup(function() {
                 self.ui.attendanceContainer.removeClass("disabled");
+                var att = self.model.get("attendance")
+                if (att && att == 1) {
+                    self.ui.mealContainer.removeClass("disabled");
+                }
                 self.model.set("name", self.ui.name.val());
             });
         }
