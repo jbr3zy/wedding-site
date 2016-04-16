@@ -5,6 +5,8 @@ import webapp2
 from rsvp import Guest, Party
 from rsvp import ATTENDANCE, MEAL
 
+from emails import allowed_emails
+
 ATTENDANCE_STRING = {v: k for k, v in ATTENDANCE.items()}
 ATTENDANCE_STRING[None] = ''
 MEAL_STRING = {v: k for k, v in MEAL.items()}
@@ -15,7 +17,8 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         # Checks for active Google account session
         user = users.get_current_user()
-        if not user:
+        print user.email
+        if not user or user.email() not in allowed_emails:
         	self.redirect(users.create_login_url(self.request.uri))
 
         guest_count = Guest.all().filter('attendance =', ATTENDANCE['YES']).count()
@@ -47,7 +50,7 @@ class AllPage(webapp2.RequestHandler):
     def get(self):
         # Checks for active Google account session
         user = users.get_current_user()
-        if not user:
+        if not user or user.email() not in allowed_emails:
             self.redirect(users.create_login_url(self.request.uri))
 
         guest_count = Guest.all().filter('attendance =', ATTENDANCE['YES']).count()
