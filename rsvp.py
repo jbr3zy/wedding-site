@@ -40,7 +40,7 @@ class Guest(db.Model):
         }
 
 class Party(db.Model):
-    name = db.StringProperty(required=True)
+    name = db.StringProperty(default='')
     id = db.IntegerProperty()
     max_guests = db.IntegerProperty()
     note = db.TextProperty(default='')

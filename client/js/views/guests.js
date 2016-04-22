@@ -77,6 +77,9 @@ var GuestItemView = Marionette.ItemView.extend({
         focusName: function() {
             this.ui.name.focus();
         },
+        htmlDecode: function(value){
+          return $('<div/>').html(value).text();
+        },
         onRender: function() {
             var self = this;
 
@@ -107,7 +110,7 @@ var GuestItemView = Marionette.ItemView.extend({
             }
 
             if (name != "") {
-                self.ui.name.attr("value", name);
+                self.ui.name.attr("value", self.htmlDecode(name));
                 self.ui.label.hide();
                 self.ui.attendanceContainer.removeClass("disabled");
             }
